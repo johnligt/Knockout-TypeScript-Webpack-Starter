@@ -1,0 +1,64 @@
+﻿var isDevBuild = process.argv.indexOf('--env.prod') < 0;
+var webpack = require("webpack");
+var path = require("path");
+//var CleanWebpackPlugin = require('clean-webpack-plugin');
+
+module.exports = {
+    context: path.resolve("./source/"),
+    resolve: {
+        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
+        root: path.resolve("./source/"),
+        alias: {
+            "jquery": "lib/jquery-2.2.4",
+            "jquery-ui.datepicker": "lib/jquery-ui.datepicker",
+            "jquery.redirect": "lib/jquery.redirect",          
+            "modernizr": "lib/modernizr-custom",
+            "knockout": "lib/knockout-3.4.0.debug",
+            "knockout.mapping": "lib/knockout.mapping-latest",
+            "knockout.validation": "lib/knockout.validation",
+            "text": "lib/text",            
+            "es6-promise": "lib/es6-promise",
+            "bootstrap": "lib/bootstrap",
+            "moment": "lib/moment"
+        }
+    },
+    entry: {
+        app: "./App/Main.ts" 
+        //lib: "./Lig/app.js"
+    },
+    output: {
+        path: path.resolve("../Build"),
+        publicPath: "../Build/",
+        filename: "[name].bundle.js"
+    },
+    devtool: isDevBuild ? "source-map" : "",
+    module: {
+        loaders: [
+            { test: /\.ts?$/, loader: "ts-loader" },
+            { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url', query: { limit: 25000 } }
+        ]
+    },
+    plugins: [
+        //new CleanWebpackPlugin(['source/build'], {
+        //    root: path.resolve("./"),
+        //    verbose: true
+        //}),
+        new webpack.IgnorePlugin(/vertx/),
+        new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jquery: "jquery",
+            "windows.jQuery": "jquery",
+            jQuery: "jquery"
+        }),
+        new webpack.optimize.CommonsChunkPlugin("vendor.js"),
+        new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 3 })
+    ].concat(isDevBuild ? [
+        // Plugins that apply in development builds only
+        //new webpack.SourceMapDevToolPlugin({ moduleFilenameTemplate: '../../[resourcePath]' }) // Compiled output is at './wwwroot/dist/', but sources are relative to './'
+    ] : [
+        // Plugins that apply in production builds only
+        new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
+    ]),
+    watch: true
+}

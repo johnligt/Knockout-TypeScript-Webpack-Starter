@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Knockout-TypeScript-Webpack-Starter project",
+  "main": "webpack.config.js",
+  "dependencies": {},
+ "scripts": {
+    "build-prod": "webpack --env.prod"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.13",
+    "expose-loader": "^0.7.1",
+    "html-loader": "^0.4.4",
+    "knockout": "^3.4.0",
+    "path": "^0.12.7",
+    "text-loader": "0.0.1",
+    "ts-loader": "^0.9.4",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
