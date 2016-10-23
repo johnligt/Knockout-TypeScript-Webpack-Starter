@@ -1,0 +1,5 @@
+.alm
+tsconfig.json
+**/App/**/*.js.map
+**/App/**/*.js
+applicationhost.config
