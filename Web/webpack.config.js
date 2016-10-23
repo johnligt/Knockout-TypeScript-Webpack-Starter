@@ -43,6 +43,7 @@ module.exports = {
             root: path.resolve("./"),
             verbose: true
         }),
+        new webpack.OldWatchingPlugin(),
         new webpack.IgnorePlugin(/vertx/),
         new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
         new webpack.ProvidePlugin({
@@ -60,7 +61,5 @@ module.exports = {
         // Plugins that apply in production builds only
         new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
     ]),
-    watch: true,
-    progress: true,
-    colors: true
+    watch: true
 }

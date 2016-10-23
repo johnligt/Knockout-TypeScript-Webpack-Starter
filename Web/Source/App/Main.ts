@@ -1,7 +1,7 @@
 ﻿export class Main {
 
     constructor() {
-        alert("Hello World");
+        alert("Hello World test test");
     }
 
 }
