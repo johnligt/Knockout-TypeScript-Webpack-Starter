@@ -114,6 +114,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Source\App\Components\Template\TemplateView.html" />
+    <Content Include="Source\App\Components\MainForm\MainFormView.html" />
+    <Content Include="Source\Lib\jquery-2.2.4.js" />
+    <Content Include="Source\Lib\knockout-3.4.0.debug.js" />
+    <Content Include="Source\Lib\knockout-3.4.0.js" />
     <Content Include="Web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
@@ -135,6 +140,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="typings\globals\es6-promise\typings.json" />
+    <Content Include="typings\globals\jquery\typings.json" />
+    <Content Include="typings\globals\knockout.mapping\typings.json" />
+    <Content Include="typings\globals\knockout.validation\typings.json" />
+    <Content Include="typings\globals\knockout\typings.json" />
+    <Content Include="typings\globals\require\typings.json" />
+    <Content Include="typings\globals\underscore\typings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,10 +156,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Source\Lib\" />
+    <Folder Include="Source\App\FormSteps\" />
+    <Folder Include="Source\App\Services\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Source\App\BookingData.ts" />
+    <TypeScriptCompile Include="Source\App\ComponentRegistration.ts" />
+    <TypeScriptCompile Include="Source\App\Components\Template\Template.ts" />
+    <TypeScriptCompile Include="Source\App\Components\MainForm\MainForm.ts" />
     <TypeScriptCompile Include="Source\App\Main.ts" />
+    <TypeScriptCompile Include="typings\globals\es6-promise\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\knockout.mapping\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\knockout.validation\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\knockout\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\require\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\underscore\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

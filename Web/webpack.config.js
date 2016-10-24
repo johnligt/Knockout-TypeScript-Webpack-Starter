@@ -51,7 +51,7 @@ module.exports = {
             jquery: "jquery",
             "windows.jQuery": "jquery",
             jQuery: "jquery"
-        }) //,
+        })//,
         //new webpack.optimize.CommonsChunkPlugin("vendor.js"),
         //new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 3 })
     ].concat(isDevBuild ? [
@@ -60,6 +60,5 @@ module.exports = {
     ] : [
         // Plugins that apply in production builds only
         new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
-    ]),
-    watch: true
+    ])
 }

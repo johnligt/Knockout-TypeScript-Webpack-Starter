@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/9bd707e9aac92e88a12872cb69e4118128de460e/knockout.validation/knockout.validation.d.ts",
+    "raw": "registry:dt/knockout.validation#0.0.0+20160501154149",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/9bd707e9aac92e88a12872cb69e4118128de460e/knockout.validation/knockout.validation.d.ts"
+  }
+}
