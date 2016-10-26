@@ -2,7 +2,7 @@
 require("expose?ko!knockout");
 
 import { ComponentRegistration } from "App/ComponentRegistration";
-import { BookingData } from "App/BookingData";
+import { BookingData } from "App/Models/BookingData";
 
 
 export class Main {
