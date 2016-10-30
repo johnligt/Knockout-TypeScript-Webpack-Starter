@@ -120,6 +120,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Build\app.bundle.js.map" />
     <Content Include="Build\vendor.js.map" />
+    <Content Include="Source\App\Components\ProductList\ProductListView.html" />
     <Content Include="Source\App\Components\Template\TemplateView.html" />
     <Content Include="Source\App\Components\MainForm\MainFormView.html" />
     <Content Include="Source\Lib\es6-promise.js" />
@@ -168,6 +169,7 @@
     <Folder Include="Source\App\FormSteps\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Source\App\Components\ProductList\ProductList.ts" />
     <TypeScriptCompile Include="Source\App\Models\BookingData.ts" />
     <TypeScriptCompile Include="Source\App\ComponentRegistration.ts" />
     <TypeScriptCompile Include="Source\App\Components\Template\Template.ts" />
