@@ -123,6 +123,7 @@
     <Content Include="Source\App\Components\ProductList\ProductListView.html" />
     <Content Include="Source\App\Components\Template\TemplateView.html" />
     <Content Include="Source\App\Components\MainForm\MainFormView.html" />
+    <Content Include="Source\App\FormSteps\FormStepSelectProducts\FormStepSelectProductsView.html" />
     <Content Include="Source\Lib\es6-promise.js" />
     <Content Include="Source\Lib\jquery-2.2.4.js" />
     <Content Include="Source\Lib\knockout-3.4.0.debug.js" />
@@ -166,10 +167,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Source\App\FormSteps\" />
+    <Folder Include="Source\App\FormSteps\FormStepCheck\" />
+    <Folder Include="Source\App\FormSteps\FormStepPersonalDetails\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Source\App\Components\ProductList\ProductList.ts" />
+    <TypeScriptCompile Include="Source\App\FormSteps\FormStepBase.ts" />
+    <TypeScriptCompile Include="Source\App\FormSteps\FormStepSelectProducts\FormStepSelectProducts.ts" />
+    <TypeScriptCompile Include="Source\App\FormSteps\FormStepsManager.ts" />
     <TypeScriptCompile Include="Source\App\Models\BookingData.ts" />
     <TypeScriptCompile Include="Source\App\ComponentRegistration.ts" />
     <TypeScriptCompile Include="Source\App\Components\Template\Template.ts" />

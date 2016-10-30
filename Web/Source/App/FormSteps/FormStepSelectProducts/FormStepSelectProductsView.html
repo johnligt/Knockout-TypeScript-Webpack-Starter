@@ -1,0 +1,34 @@
+﻿<!-- ko if: visible() && active() -->
+
+<!-- ko if: isLoaded() -->
+
+<section class="bg-style bg-style__small bg-style__gamma bg-style__onecolor bg-style__rounded">
+    <h2 class="bg-style__header pull-left">
+        <indi-label params="labelKey: 'premie-berekenen/ben-je-al-bekend-bij-ons'"></indi-label>
+    </h2>
+    
+    <indi-hyperlink params="labelKey: 'premie-berekenen/geef-je-wijziging-door'"></indi-hyperlink>    
+</section>
+
+<indi-kortingen></indi-kortingen>
+
+<indi-verzekeringen params="verzekerde: verzekeringnemer, isVerzekeringNemer: true"></indi-verzekeringen>
+
+<indi-betalings-intervallen></indi-betalings-intervallen>
+
+<indi-iemand-meeverzekeren></indi-iemand-meeverzekeren>
+
+<!-- /ko -->
+
+<span data-bind='template: { afterRender: doInit }'></span>
+
+<div class="alert alert-warning" data-bind="visible: !isValid()">
+    <p>
+        <indi-label params="labelKey: 'premie-berekenen/geen-product-geselecteerd'">
+            <text data-bind="html: label.labelText">Je hebt geen product geselecteerd</text>
+        </indi-label>
+    </p>
+</div>
+
+<!-- /ko -->
+
