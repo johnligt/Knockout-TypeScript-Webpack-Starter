@@ -19,7 +19,6 @@ export class FormStepSelectProductsViewModel extends FormStepBase {
 
         this.formStep = FormStepEnum.FormStepSelectProducts;
         
-        
     }
 }
 
@@ -30,7 +29,7 @@ export class FormStepSelectProductsComponent {
 
         return {
             viewModel: FormStepSelectProductsViewModel,
-            template: require("text!./FormStepSelectProductsView")
+            template: require("text!./FormStepSelectProductsView.html")
         }
     }
 }
