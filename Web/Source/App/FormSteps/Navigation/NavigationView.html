@@ -1,0 +1,13 @@
+﻿<a class="btn btn-arrow-left btn-large pull-left" title="terug" data-bind="click: goToPreviousStep, visible: !isFirstStep()">
+    <indi-label params="labelKey: 'algemeen/terug'"></indi-label>
+    Back
+</a>
+
+<button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: goToNextStep, visible: !isLastStep()">
+    <indi-label params="labelKey: 'algemeen/ga-verder'"></indi-label>
+    Next
+</button>
+
+<button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: submitAanvraag, visible: isLastStep()">
+    Submit
+</button>

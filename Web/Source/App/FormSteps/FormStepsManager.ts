@@ -27,12 +27,12 @@ export class FormStepsManager {
 
     static goToNextStep() {
        
-        const result = ko.validation.group(FormStepsManager.currentStep().validationModel, { deep: true });
+        //const result = ko.validation.group(FormStepsManager.currentStep().validationModel, { deep: true });
 
-        if (result().length > 0) {
-            result.showAllMessages(true);
-            return;
-        }
+        //if (result().length > 0) {
+        //    result.showAllMessages(true);
+        //    return;
+        //}
         
         let nextSteps = FormStepsManager.formSteps.filter(x => x.active()).filter(x => x.order > FormStepsManager.currentStep().order);
 
@@ -71,7 +71,7 @@ export class FormStepsManager {
        
         // This clears the validation model because field validation
         // is registered every time the field is shown on a form.
-        FormStepsManager.currentStep().validationModel = new Array<KnockoutObservable<any>>();
+        //FormStepsManager.currentStep().validationModel = new Array<KnockoutObservable<any>>();
         FormStepsManager.currentStep().visible(false);
 
         let target = FormStepsManager.formSteps.filter(x => x.formStep === targetFormStep)[0];

@@ -20,10 +20,40 @@ export class Main {
 
                 let viewModel = new BookingData();
 
-                ko.applyBindings(viewModel);    
-        });
+                ko.applyBindings(viewModel);
+                Main.initializeValidation();
+            });
 
               
+    }
+
+    static initializeValidation() {
+
+        //TussenvoegselValidationRule.init();
+        //GeslachtRequiredValidationRule.init();
+        //PostcodeValidationRule.init();
+        //PhonenumberValidationRule.init();
+        //ConditionalRequiredValidationRule.init();
+        //IbanValidationRule.init();
+        //BirthdateValidationRule.init();
+        //NoHtmlValidationRule.init();
+
+        ko.validation.rules['required'].message = 'Dit veld is verplicht';
+        ko.validation.rules['email'].message = 'E-mail adres heeft een ongeldig formaat';
+        ko.validation.rules['pattern'].message = 'Dit veld heeft een ongeldig formaat';
+        ko.validation.rules['maxLength'].message = 'Een maximum van {0} karakters is toegestaan';
+        ko.validation.rules['minLength'].message = 'Een minimum van {0} karakters is vereist';
+        ko.validation.rules['min'].message = 'Een getal gelijk of groter dan {0} is vereist';
+        ko.validation.registerExtenders();
+
+        ko.validation.init({
+            insertMessages: false,
+            grouping: {
+                deep: true,
+                live: true,
+                observable: true
+            }
+        }, true);
     }
 
 }
