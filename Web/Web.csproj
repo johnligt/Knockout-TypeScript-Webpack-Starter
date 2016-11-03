@@ -121,6 +121,7 @@
     <Content Include="Build\app.bundle.js.map" />
     <Content Include="Build\vendor.js.map" />
     <Content Include="Source\App\Components\ProductList\ProductListView.html" />
+    <Content Include="Source\App\Components\ShoppingBag\ShoppingBagView.html" />
     <Content Include="Source\App\Components\Template\TemplateView.html" />
     <Content Include="Source\App\MainForm\MainFormView.html" />
     <Content Include="Source\App\FormSteps\FormStepCheck\FormStepCheckView.html" />
@@ -173,6 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Source\App\Components\ProductList\ProductList.ts" />
+    <TypeScriptCompile Include="Source\App\Components\ShoppingBag\ShoppingBag.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepBase.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepCheck\FormStepCheck.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetails.ts" />
