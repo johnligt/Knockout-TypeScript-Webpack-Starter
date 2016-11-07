@@ -1,5 +1,16 @@
 ﻿<!-- ko foreach: products -->
 
-<span data-bind="text: $data.productName"></span>
+<div class="row">
+    <div class="col-md-6">
+        <span  data-bind="text: $data.productName"></span>
+        
+        <button data-bind="visible: $data.isSelected() === false, click: $parent.addProduct">Add</button>
+
+        <button data-bind="visible: $data.isSelected() === true,  click: $parent.removeProduct">Remove</button>
+
+    </div>
+	<div class="col-md-6">
+	</div>
+</div>
 
 <!-- /ko -->

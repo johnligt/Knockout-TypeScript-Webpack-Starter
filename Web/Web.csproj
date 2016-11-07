@@ -128,10 +128,17 @@
     <Content Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetailsView.html" />
     <Content Include="Source\App\FormSteps\FormStepSelectProducts\FormStepSelectProductsView.html" />
     <Content Include="Source\App\FormSteps\Navigation\NavigationView.html" />
+    <Content Include="Source\Lib\bootstrap.js" />
+    <Content Include="Source\Lib\bootstrap.min.js" />
     <Content Include="Source\Lib\es6-promise.js" />
     <Content Include="Source\Lib\jquery-2.2.4.js" />
+    <Content Include="Source\Lib\jquery-ui.datepicker.js" />
+    <Content Include="Source\Lib\jquery-ui.js" />
     <Content Include="Source\Lib\knockout-3.4.0.debug.js" />
     <Content Include="Source\Lib\knockout-3.4.0.js" />
+    <Content Include="Source\Lib\modernizr-custom.js" />
+    <Content Include="Source\Lib\moment.js" />
+    <Content Include="Source\Lib\moment.min.js" />
     <Content Include="Web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
@@ -175,6 +182,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Source\App\Components\ProductList\ProductList.ts" />
     <TypeScriptCompile Include="Source\App\Components\ShoppingBag\ShoppingBag.ts" />
+    <TypeScriptCompile Include="Source\App\CustomBindingHandlers.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepBase.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepCheck\FormStepCheck.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetails.ts" />

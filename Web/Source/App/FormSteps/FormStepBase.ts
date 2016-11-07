@@ -1,4 +1,4 @@
-﻿import { FormStepsManager } from 'App/FormSteps/FormStepsManager';
+﻿import { FormStepsManager } from "App/FormSteps/FormStepsManager";
 
 export class FormStepBase  {
 

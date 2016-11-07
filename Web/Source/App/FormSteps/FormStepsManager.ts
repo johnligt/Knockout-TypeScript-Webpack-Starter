@@ -1,5 +1,5 @@
-﻿import ko = require('knockout');
-import { FormStepBase, FormStepEnum} from './FormStepBase';
+﻿import ko = require("knockout");
+import { FormStepBase, FormStepEnum} from "./FormStepBase";
 
 export class FormStepsManager {
     

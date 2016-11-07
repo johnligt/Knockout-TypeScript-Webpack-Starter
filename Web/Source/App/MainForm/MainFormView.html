@@ -1,9 +1,21 @@
-﻿<div>MainForm here</div>
+﻿<div class="container-fluid">
+	<div class="row">
+	    <div class="col-md-12">
+	        <h1>MainForm here</h1>
+	    </div>
+	</div>
+	<div class="row">
+	    <div class="col-md-8">
 
-<st-shopping-bag></st-shopping-bag>
+            <st-formstep-selectproducts params="order: 0"></st-formstep-selectproducts>
+            <st-formstep-personaldetails params="order: 1"></st-formstep-personaldetails>
+            <st-formstep-check params="order: 2"></st-formstep-check>
 
-<st-formstep-selectproducts params="order: 0"></st-formstep-selectproducts>
-<st-formstep-personaldetails params="order: 1"></st-formstep-personaldetails>
-<st-formstep-check params="order: 2"></st-formstep-check>
+            <st-navigation></st-navigation>
 
-<st-navigation></st-navigation>
+	    </div>
+	    <div class="col-md-4">
+	       <st-shopping-bag></st-shopping-bag>
+	    </div>
+	</div>
+</div>

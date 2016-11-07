@@ -1,10 +1,10 @@
 ﻿require(["jquery"]);
-import es6promise = require('es6-promise');
+import es6promise = require("es6-promise");
 import {Product} from "App/Models/Product";
 
 export class ProductService {
 
-    private static productServiceUrl = '/api/products/';
+    private static productServiceUrl = "/api/products/";
 
     public static productList: Product[];
     
@@ -19,6 +19,12 @@ export class ProductService {
 
             request.done((data) => {
                 ProductService.productList = <Product[]>data;
+
+                // Set all product to "not selected" on first load.
+                for (let product of ProductService.productList) {
+                    product.isSelected = ko.observable(false);
+                } 
+                
                 console.log("Product list initialized");
                 
             }).done(
