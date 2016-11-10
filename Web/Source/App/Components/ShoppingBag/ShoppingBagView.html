@@ -1,1 +1,16 @@
-﻿<div>Shopping bag view content here</div>
+﻿<div>Shopping bag here</div>
+
+<!-- ko foreach: selectedProducts() -->
+
+<div class="row">
+    <div class="col-md-6">
+        <span  data-bind="text: $data.productName"></span>        
+    </div>
+    <div class="col-md-6">
+        <span data-bind="visible: $parent.hasDiscount() === false, text: $data.productPrice"></span>
+        <span data-bind="visible: $parent.hasDiscount() === true, text: $data.productDiscountPrice"></span>
+    </div>
+    
+</div>
+
+<!-- /ko -->

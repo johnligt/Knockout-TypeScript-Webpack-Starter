@@ -8,19 +8,23 @@ export class ProductListViewModel {
     addProduct: (product: Product) => void;
     removeProduct: (product: Product) => void;
 
+    hasDiscount: KnockoutObservable<boolean>;
+
     constructor(params) {
 
         this.products = ProductService.productList;
 
         this.addProduct = (product: Product) => {
-            product.isSelected(true);
+            product.isSelected(true);            
             console.log(`Added ${product.productName}`);
         }
 
         this.removeProduct = (product: Product) => {
-            product.isSelected(false);
+            product.isSelected(false);            
             console.log(`Removed ${product.productName}`);
         }
+
+        this.hasDiscount = ko.observable(true);
 
     }
 
