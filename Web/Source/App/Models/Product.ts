@@ -1,7 +1,6 @@
 ﻿export class Product {
     productId: number;
     productName: string;
-    productPrice: number;
-    productDiscountPrice: number;
+    productPrice: KnockoutObservable<number>;
     isSelected: KnockoutObservable<boolean>;
 }

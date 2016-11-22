@@ -1,33 +1,23 @@
 ﻿[
   {
     "productId": 1,
-    "productName": "Batman",
-    "productPrice": 100.00,
-    "productDiscountPrice": 75.00
+    "productName": "Batman"
   },
   {
     "productId": 2,
-    "productName": "Superman",
-    "productPrice": 100.00,
-    "productDiscountPrice": 75.00
+    "productName": "Superman"
   },
   {
     "productId": 3,
-    "productName": "Spiderman",
-    "productPrice": 80.00,
-    "productDiscountPrice": 60.00
+    "productName": "Spiderman"
   },
   {
     "productId": 4,
-    "productName": "Hulk",
-    "productPrice": 50.00,
-    "productDiscountPrice": 35.00
+    "productName": "Hulk"
   },
   {
     "productId": 5,
-    "productName": "Iron Man",
-    "productPrice": 50.00,
-    "productDiscountPrice": 35.00
+    "productName": "Iron Man"
   }
 ]
 

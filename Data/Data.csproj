@@ -45,8 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Models\Price.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\PricesRepository.cs" />
     <Compile Include="Repository\ProductsRepository.cs" />
   </ItemGroup>
   <ItemGroup>

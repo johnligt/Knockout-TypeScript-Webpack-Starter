@@ -1,6 +1,7 @@
 ﻿require(["jquery"]);
 import es6promise = require("es6-promise");
-import {Product} from "App/Models/Product";
+import { Product } from "App/Models/Product";
+import { PriceService } from "App/Services/PriceService";
 
 export class ProductService {
 
@@ -20,9 +21,21 @@ export class ProductService {
             request.done((data) => {
                 ProductService.productList = <Product[]>data;
 
-                // Set all product to "not selected" on first load.
+                let priceList = PriceService.priceList;
+
+                // Set all products to "not selected" on first load.
+                // Also set the prices of the products to the default price from
+                // the prices service. 
+                // I.e. the ProductService depends on the PriceService.
                 for (let product of ProductService.productList) {
+
                     product.isSelected = ko.observable(false);
+
+                    const productPriceObject = priceList.filter(x => x.productId === product.productId)[0];
+
+                    if (productPriceObject !== undefined && productPriceObject !== null) {
+                        product.productPrice = ko.observable(productPriceObject.productDefaultPrice);
+                    }                    
                 } 
                 
                 console.log("Product list initialized");

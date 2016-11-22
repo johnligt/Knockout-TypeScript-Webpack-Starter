@@ -5,6 +5,7 @@ export class BookingData {
 
     customer: Customer;
     order: Order;
+    hasDiscount: KnockoutObservable<boolean>;
 
 
     constructor() {

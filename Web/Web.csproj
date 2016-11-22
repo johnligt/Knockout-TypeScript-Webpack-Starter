@@ -145,6 +145,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\api\PricesController.cs" />
     <Compile Include="Controllers\api\ProductsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -169,6 +170,7 @@
     <Content Include="typings\globals\require\typings.json" />
     <Content Include="typings\globals\underscore\typings.json" />
     <Content Include="JsonData\Products.json" />
+    <Content Include="JsonData\Prices.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -197,7 +199,9 @@
     <TypeScriptCompile Include="Source\App\Models\Customer.ts" />
     <TypeScriptCompile Include="Source\App\Models\Order.ts" />
     <TypeScriptCompile Include="Source\App\Models\OrderDetail.ts" />
+    <TypeScriptCompile Include="Source\App\Models\Price.ts" />
     <TypeScriptCompile Include="Source\App\Models\Product.ts" />
+    <TypeScriptCompile Include="Source\App\Services\PriceService.ts" />
     <TypeScriptCompile Include="Source\App\Services\ProductService.ts" />
     <TypeScriptCompile Include="typings\globals\es6-promise\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />

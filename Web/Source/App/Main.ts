@@ -3,8 +3,8 @@ require("expose?ko!knockout");
 import es6promise = require("es6-promise");
 import { ComponentRegistration } from "App/ComponentRegistration";
 import { BookingData } from "App/Models/BookingData";
-import { ProductService} from "App/Services/ProductService";
-
+import { ProductService } from "App/Services/ProductService";
+import { PriceService } from "App/Services/PriceService";
 
 export class Main {
 
@@ -12,9 +12,12 @@ export class Main {
         
         ComponentRegistration.registerComponents();
 
+        const pricesPromise = PriceService.getPriceList();
         const productsPromise = ProductService.getProductList();
 
-        let loadData = es6promise.Promise.all([productsPromise]).then(
+        let loadData = es6promise.Promise.all([pricesPromise])
+            .then((result) => { return productsPromise} )
+            .then(
             (result) => {
 
                 let viewModel = new BookingData();
