@@ -1,12 +1,15 @@
 ﻿require(["jquery"]);
 import es6promise = require("es6-promise");
-import {Price} from "App/Models/Price";
+import { Price } from "App/Models/Price";
+import { ProductService } from "App/Services/ProductService";
 
 export class PriceService {
 
     private static priceServiceUrl = "/api/prices/";
 
-    public static priceList: Price[];
+    static priceList: Price[];
+
+    static selectedDiscount: KnockoutObservable<DiscountEnum>;
     
     static getPriceList(): any {
 
@@ -18,8 +21,11 @@ export class PriceService {
             });
 
             request.done((data) => {
+
                 PriceService.priceList = <Price[]>data;
-  
+
+                PriceService.selectedDiscount = ko.observable(DiscountEnum.DefaultDiscount);
+
                 console.log("Price list initialized");
                 
             }).done(
@@ -42,5 +48,44 @@ export class PriceService {
         return promise;
     }
 
-   
+
+    static setDiscount(discount: DiscountEnum): void {
+        PriceService.selectedDiscount(discount);
+    }
+
+    static setPrices(): void {
+        
+        for (let product of ProductService.productList) {
+            
+            const productPriceObject = PriceService.priceList.filter(x => x.productId === product.productId)[0];
+
+            if (productPriceObject === undefined || productPriceObject === null) {
+                continue;
+            }
+
+            if (PriceService.selectedDiscount() === DiscountEnum.DefaultDiscount) {
+                product.productPrice(productPriceObject.productDefaultPrice);
+            }
+
+            switch (PriceService.selectedDiscount()) {
+                case DiscountEnum.NormalDiscount:
+                    product.productPrice(productPriceObject.productDiscountPrice);
+                    break;
+                case DiscountEnum.SuperDiscount:
+                    product.productPrice(productPriceObject.productSuperDiscountPrice);
+                    break;
+                default:
+                    product.productPrice(productPriceObject.productDefaultPrice);            
+            }
+            
+        } 
+    }
+}
+
+
+export enum DiscountEnum {
+
+    DefaultDiscount,
+    NormalDiscount,
+    SuperDiscount
 }
