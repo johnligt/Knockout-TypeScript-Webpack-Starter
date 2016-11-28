@@ -1,9 +1,14 @@
-﻿<div>
-    <input type="radio" name="discount" value="default" data-bind="checked: selectedDiscount" />
+﻿<h2>Discount</h2>
+
+<div>
+    <input type="radio" name="discount" data-bind="checkedValue: 0, checked: selectedDiscount" />
+    Default
 </div>
 <div>
-    <input type="radio" name="discount" value="discount" data-bind="checked: selectedDiscount" />
+    <input type="radio" name="discount" value="1" data-bind="checkedValue: 1, checked: selectedDiscount" />
+    Discount
 </div>
 <div>
-    <input type="radio" name="discount" value="superdiscount" data-bind="checked: selectedDiscount" />
+    <input type="radio" name="discount" value="2" data-bind="checkedValue: 2, checked: selectedDiscount" />
+    Super discount
 </div>

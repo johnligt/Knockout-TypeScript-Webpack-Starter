@@ -13,16 +13,21 @@ export class Main {
         ComponentRegistration.registerComponents();
 
         const pricesPromise = PriceService.getPriceList();
-        const productsPromise = ProductService.getProductList();
-
+        
         let loadData = es6promise.Promise.all([pricesPromise])
-            .then((result) => { return productsPromise} )
+            .then((result) => {
+                const productsPromise = ProductService.getProductList();
+                return productsPromise;
+            })
             .then(
             (result) => {
 
                 let viewModel = new BookingData();
 
                 ko.applyBindings(viewModel);
+
+                console.log("Applied bindings");
+
                 Main.initializeValidation();
 
                 require(["App/CustomBindingHandlers"]);

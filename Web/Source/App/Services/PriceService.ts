@@ -27,10 +27,11 @@ export class PriceService {
                 PriceService.selectedDiscount = ko.observable(DiscountEnum.DefaultDiscount);
 
                 console.log("Price list initialized");
+                resolve(request.responseJSON);
                 
             }).done(
             () => {
-                resolve(request.responseJSON);
+                //resolve(request.responseJSON);
             });
             
             request.fail(

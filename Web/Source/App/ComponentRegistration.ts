@@ -1,6 +1,7 @@
 ﻿import { MainFormComponent } from "App/MainForm/MainForm";
 import { ProductListComponent } from "App/Components/ProductList/ProductList";
 import { ShoppingBagComponent } from "App/Components/ShoppingBag/ShoppingBag";
+import { DiscountComponent } from "App/Components/Discount/Discount";
 import { FormStepSelectProductsComponent } from "App/FormSteps/FormStepSelectProducts/FormStepSelectProducts";
 import { FormStepPersonalDetailsComponent } from "App/FormSteps/FormStepPersonalDetails/FormStepPersonalDetails";
 import { FormStepCheckComponent } from "App/FormSteps/FormStepCheck/FormStepCheck";
@@ -24,6 +25,7 @@ export class ComponentRegistration {
         //Components
         ko.components.register("st-product-list", new ProductListComponent());
         ko.components.register("st-shopping-bag", new ShoppingBagComponent());
+        ko.components.register("st-discount", new DiscountComponent());
 
 
     }
