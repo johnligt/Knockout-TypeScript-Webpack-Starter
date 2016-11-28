@@ -8,6 +8,12 @@ export class DiscountViewModel {
 
         this.selectedDiscount = PriceService.selectedDiscount;
 
+        this.selectedProducts = ko.computed(() => {
+
+            return ProductService.productList.filter(x => x.isSelected());
+
+        });
+
     }
 
 }
