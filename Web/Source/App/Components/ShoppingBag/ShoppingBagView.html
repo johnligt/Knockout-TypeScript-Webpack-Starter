@@ -1,12 +1,12 @@
-﻿<div>Shopping bag here</div>
+﻿<h3>Your shopping bag:</h3>
 
 <!-- ko foreach: selectedProducts() -->
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-xs-6">
         <span data-bind="text: $data.productName"></span>        
     </div>
-    <div class="col-md-6">
+    <div class="col-xs-6">
         <span data-bind="currency: $data.productPrice"></span>        
     </div>
     
@@ -14,12 +14,14 @@
 
 <!-- /ko -->
 
+<hr />
+
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-xs-6">
         <span>Total</span>        
     </div>
-    <div class="col-md-6">
-        
+    <div class="col-xs-6">
+        <span data-bind="currency: total"></span>       
     </div>
     
 </div>

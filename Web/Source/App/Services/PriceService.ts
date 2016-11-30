@@ -25,9 +25,7 @@ export class PriceService {
                 PriceService.priceList = <Price[]>data;
 
                 PriceService.selectedDiscount = ko.observable(DiscountEnum.DefaultDiscount);
-
-
-
+                
                 console.log("Price list initialized");
                 resolve(request.responseJSON);
                 
@@ -52,11 +50,6 @@ export class PriceService {
     }
 
 
-    //static setDiscount(discount: DiscountEnum): void {
-    //    PriceService.selectedDiscount(discount);
-
-    //}
-
     static setPrices(): void {
         
         for (let product of ProductService.productList) {
@@ -66,11 +59,7 @@ export class PriceService {
             if (productPriceObject === undefined || productPriceObject === null) {
                 continue;
             }
-
-            //if (PriceService.selectedDiscount() === DiscountEnum.DefaultDiscount) {
-            //    product.productPrice(productPriceObject.productDefaultPrice);
-            //}
-
+            
             switch (PriceService.selectedDiscount()) {
                 case DiscountEnum.NormalDiscount:
                     product.productPrice(productPriceObject.productDiscountPrice);

@@ -3,11 +3,12 @@ import { ProductService } from "App/Services/ProductService";
 
 export class ShoppingBagViewModel {
 
-    selectedProducts: KnockoutComputed<Product[]>;
-    hasDiscount: KnockoutObservable<boolean>;
-    total: KnockoutObservable<number>;
+    selectedProducts: KnockoutComputed<Product[]>;   
+    total: KnockoutComputed<number>;
 
     constructor(params) {
+
+        let self = this;
 
         this.selectedProducts = ko.computed(() => {
 
@@ -15,11 +16,18 @@ export class ShoppingBagViewModel {
 
         });
 
-        //this.total
-    
-        this.hasDiscount = ko.observable(true);
-    }
+        this.total = ko.computed(() => {
 
+            let total = 0;
+
+            for (let product of self.selectedProducts()) {
+                total += product.productPrice();
+            }
+
+            return total;
+        });
+            
+    }
 }
 
 export class ShoppingBagComponent {
