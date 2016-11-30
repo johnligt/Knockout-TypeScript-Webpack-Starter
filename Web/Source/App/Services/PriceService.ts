@@ -26,6 +26,8 @@ export class PriceService {
 
                 PriceService.selectedDiscount = ko.observable(DiscountEnum.DefaultDiscount);
 
+
+
                 console.log("Price list initialized");
                 resolve(request.responseJSON);
                 
@@ -36,7 +38,7 @@ export class PriceService {
             
             request.fail(
                 (jqXhr, textStatus) => {
-                    let message = "Request in PriceService failed: " + textStatus;
+                    const message = "Request in PriceService failed: " + textStatus;
                     console.log(message);
                     reject(message);
                 }
@@ -50,9 +52,10 @@ export class PriceService {
     }
 
 
-    static setDiscount(discount: DiscountEnum): void {
-        PriceService.selectedDiscount(discount);
-    }
+    //static setDiscount(discount: DiscountEnum): void {
+    //    PriceService.selectedDiscount(discount);
+
+    //}
 
     static setPrices(): void {
         
@@ -64,9 +67,9 @@ export class PriceService {
                 continue;
             }
 
-            if (PriceService.selectedDiscount() === DiscountEnum.DefaultDiscount) {
-                product.productPrice(productPriceObject.productDefaultPrice);
-            }
+            //if (PriceService.selectedDiscount() === DiscountEnum.DefaultDiscount) {
+            //    product.productPrice(productPriceObject.productDefaultPrice);
+            //}
 
             switch (PriceService.selectedDiscount()) {
                 case DiscountEnum.NormalDiscount:

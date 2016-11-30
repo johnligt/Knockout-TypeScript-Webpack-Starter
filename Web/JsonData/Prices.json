@@ -25,7 +25,7 @@
   },
   {
     "productId": 5,
-    "producDefaulttPrice": 50.00,
+    "productDefaultPrice": 50.00,
     "productDiscountPrice": 35.00,
     "productSuperDiscountPrice": 20.00
   }

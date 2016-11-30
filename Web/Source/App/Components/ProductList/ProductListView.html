@@ -5,8 +5,7 @@
         <span  data-bind="text: $data.productName"></span>        
     </div>
     <div class="col-md-4">
-        <span data-bind="visible: $parent.hasDiscount() === false, text: $data.productPrice"></span>
-        <span data-bind="visible: $parent.hasDiscount() === true, text: $data.productDiscountPrice"></span>
+        <span data-bind="text: $data.productPrice"></span>        
     </div>
     <div class="col-md-4">
         <button data-bind="visible: $data.isSelected() === false, click: $parent.addProduct">Add</button>
