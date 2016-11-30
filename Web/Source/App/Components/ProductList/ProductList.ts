@@ -1,5 +1,6 @@
 ﻿import { Product } from "App/Models/Product";
 import { ProductService } from "App/Services/ProductService";
+//require(["App/CustomBindingHandlers"]);
 
 export class ProductListViewModel {
 

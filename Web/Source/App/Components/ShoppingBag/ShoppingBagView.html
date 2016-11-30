@@ -4,13 +4,22 @@
 
 <div class="row">
     <div class="col-md-6">
-        <span  data-bind="text: $data.productName"></span>        
+        <span data-bind="text: $data.productName"></span>        
     </div>
     <div class="col-md-6">
-        <span data-bind="visible: $parent.hasDiscount() === false, text: $data.productPrice"></span>
-        <span data-bind="visible: $parent.hasDiscount() === true, text: $data.productDiscountPrice"></span>
+        <span data-bind="currency: $data.productPrice"></span>        
     </div>
     
 </div>
 
 <!-- /ko -->
+
+<div class="row">
+    <div class="col-md-6">
+        <span>Total</span>        
+    </div>
+    <div class="col-md-6">
+        
+    </div>
+    
+</div>
