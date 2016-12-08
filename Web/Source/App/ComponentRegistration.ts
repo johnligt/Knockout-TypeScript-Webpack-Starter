@@ -5,6 +5,7 @@ import { DiscountComponent } from "App/Components/Discount/Discount";
 import { FormStepSelectProductsComponent } from "App/FormSteps/FormStepSelectProducts/FormStepSelectProducts";
 import { FormStepPersonalDetailsComponent } from "App/FormSteps/FormStepPersonalDetails/FormStepPersonalDetails";
 import { FormStepCheckComponent } from "App/FormSteps/FormStepCheck/FormStepCheck";
+import { FormStepThanksComponent } from "App/FormSteps/FormStepThanks/FormStepThanks";
 import { NavigationComponent } from "App/FormSteps/Navigation/Navigation";
 import { LabelComponent } from "App/FormFields/Label/Label";
 import { TextFieldComponent } from "App/FormFields/TextField/TextField";
@@ -21,6 +22,7 @@ export class ComponentRegistration {
         ko.components.register("indi-formstep-selectproducts", new FormStepSelectProductsComponent());
         ko.components.register("indi-formstep-personaldetails", new FormStepPersonalDetailsComponent());
         ko.components.register("indi-formstep-check", new FormStepCheckComponent());
+        ko.components.register("indi-formstep-thanks", new FormStepThanksComponent());
 
         // FormStep Navigation
         ko.components.register("indi-navigation", new NavigationComponent());

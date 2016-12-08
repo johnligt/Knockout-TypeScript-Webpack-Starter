@@ -136,8 +136,8 @@
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "general/thank-you",
+    "labelText": "Thank you for booking!",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",

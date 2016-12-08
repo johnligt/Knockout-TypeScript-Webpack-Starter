@@ -25,5 +25,6 @@ export enum FormStepEnum {
 
     FormStepSelectProducts,
     FormStepPersonalDetails,
-    FormStepCheck
+    FormStepCheck,
+    FormStepThanks
 }

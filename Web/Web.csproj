@@ -126,6 +126,7 @@
     <Content Include="Source\App\Components\Template\TemplateView.html" />
     <Content Include="Source\App\FormFields\Label\LabelView.html" />
     <Content Include="Source\App\FormFields\TextField\TextFieldView.html" />
+    <Content Include="Source\App\FormSteps\FormStepThanks\FormStepThanksView.html" />
     <Content Include="Source\App\MainForm\MainFormView.html" />
     <Content Include="Source\App\FormSteps\FormStepCheck\FormStepCheckView.html" />
     <Content Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetailsView.html" />
@@ -202,6 +203,7 @@
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetails.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepSelectProducts\FormStepSelectProducts.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepsManager.ts" />
+    <TypeScriptCompile Include="Source\App\FormSteps\FormStepThanks\FormStepThanks.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\Navigation\Navigation.ts" />
     <TypeScriptCompile Include="Source\App\Models\BookingData.ts" />
     <TypeScriptCompile Include="Source\App\ComponentRegistration.ts" />
