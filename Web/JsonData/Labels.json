@@ -32,48 +32,48 @@
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/lastName",
+    "labelText": "Last name",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/street",
+    "labelText": "Street",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/houseNumber",
+    "labelText": "House number",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/city",
+    "labelText": "City",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/telephone",
+    "labelText": "Telephone",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""
   },
   {
-    "labelKey": "",
-    "labelText": "",
+    "labelKey": "customer/email",
+    "labelText": "Email",
     "infoText": "",
     "optionValue": "",
     "cssClass": "",

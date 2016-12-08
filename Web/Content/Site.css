@@ -16,3 +16,12 @@ textarea {
     max-width: 280px;
 }
 
+.textfield-label {
+    min-width: 180px;
+}
+
+.validationMessage {
+    color: red;
+    padding-left: 10px;
+
+}

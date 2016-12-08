@@ -21,22 +21,7 @@ export class NavigationViewModel {
             result.showAllMessages(true);
             return;
         }
-
-        //let saveStatePromise = StateService.saveState();
-
-        //(<any>$).blockUI({ message: '<h1>Een ogenblik geduld</h1><img src="/Static/img/loader.gif" /><p>Uw aanvraag wordt verzonden...' });
-
-        //saveStatePromise.then(
-        //    () => {
-        //        let aanvraag: IAanvraag = AanvraagService.aanvraag();
-        //        let persoonNaam = this.getPersoonNaam(aanvraag.verzekerden.verzekeringnemer.persoon);
-        //        AanvraagService.submitAanvraag().done((data) => {
-        //            let url = this.getBedanktUrl(aanvraag);
-        //            (<any>$).redirect(url, { name: persoonNaam });
-        //        });
-        //    }
-        //);
-                
+               
     }
 
     goToNextStep() {        

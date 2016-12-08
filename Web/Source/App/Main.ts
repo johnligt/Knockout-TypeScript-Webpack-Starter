@@ -43,16 +43,16 @@ export class Main {
 
     static initializeValidation() {
 
-        ko.validation.rules["required"].message = "Dit veld is verplicht";
-        ko.validation.rules["email"].message = "E-mail adres heeft een ongeldig formaat";
-        ko.validation.rules["pattern"].message = "Dit veld heeft een ongeldig formaat";
-        ko.validation.rules["maxLength"].message = "Een maximum van {0} karakters is toegestaan";
-        ko.validation.rules["minLength"].message = "Een minimum van {0} karakters is vereist";
-        ko.validation.rules["min"].message = "Een getal gelijk of groter dan {0} is vereist";
+        ko.validation.rules["required"].message = "Required field";
+        ko.validation.rules["email"].message = "Invalid email format";
+        ko.validation.rules["pattern"].message = "Invalid field value";
+        ko.validation.rules["maxLength"].message = "A maximum of {0} characters is allowed";
+        ko.validation.rules["minLength"].message = "A minimum of {0} characters is allowed";
+        ko.validation.rules["min"].message = "A number greater than or equal to {0} is required";
         ko.validation.registerExtenders();
 
         ko.validation.init({
-            insertMessages: false,
+            insertMessages: true,
             grouping: {
                 deep: true,
                 live: true,

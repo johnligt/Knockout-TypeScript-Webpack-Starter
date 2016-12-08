@@ -2,8 +2,6 @@
 
 <div>FormStepPersonalDetailsView here</div>
 
-
-
 <indi-textfield params="field: bookingData.customer.firstName, 
                             required: true,                                                      
                             maxLength: 24,
@@ -11,18 +9,43 @@
                             name:'firstname', validationModel: validationModel">
 </indi-textfield>
 
-<!--<indi-textfield params="field: persoon.voorvoegsels, tussenvoegsel: true,
-                            labelKey: 'persoonlijke-gegevens/tussenvoegsel',
-                            cssClass: 'input--small' , name:'tussenvoegsel-verzekeringnemer', 
+<indi-textfield params="field: bookingData.customer.lastName,
+                            labelKey: 'customer/lastName',
+                            name:'lastname', 
                             validationModel: validationModel">
 </indi-textfield>
 
-<indi-textfield params="field: persoon.achternaam, required: true,
-                            pattern: '^(\s*)[^0-9!@#$%^*()+=~%^:;&lt;&gt;?,`]{0,120}(\s*)$',
-                            labelKey: 'persoonlijke-gegevens/achternaam',
-                            name:'achternaam-verzekeringnemer', 
+<indi-textfield params="field: bookingData.customer.street,
+                            labelKey: 'customer/street',
+                            name:'street', 
                             validationModel: validationModel">
-</indi-textfield>-->
+</indi-textfield>
+
+<indi-textfield params="field: bookingData.customer.houseNumber,
+                            labelKey: 'customer/houseNumber',
+                            name:'housenumber', 
+                            validationModel: validationModel">
+</indi-textfield>
+
+<indi-textfield params="field: bookingData.customer.city,
+                            labelKey: 'customer/city',
+                            name:'city', 
+                            validationModel: validationModel">
+</indi-textfield>
+
+<indi-textfield params="field: bookingData.customer.telephone,
+                            labelKey: 'customer/telephone',
+                            name:'telephone', 
+                            validationModel: validationModel">
+</indi-textfield>
+
+<indi-textfield params="field: bookingData.customer.email,
+                            labelKey: 'customer/email',
+                            name:'email', 
+                            required: true,
+                            email: true,
+                            validationModel: validationModel">
+</indi-textfield>
 
 
-<!-- /ko  -->
+<!-- /ko -->

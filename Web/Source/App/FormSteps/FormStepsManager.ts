@@ -27,12 +27,12 @@ export class FormStepsManager {
 
     static goToNextStep() {
        
-        //const result = ko.validation.group(FormStepsManager.currentStep().validationModel, { deep: true });
+        const result = ko.validation.group(FormStepsManager.currentStep().validationModel, { deep: true });
 
-        //if (result().length > 0) {
-        //    result.showAllMessages(true);
-        //    return;
-        //}
+        if (result().length > 0) {
+            result.showAllMessages(true);
+            return;
+        }
         
         let nextSteps = FormStepsManager.formSteps.filter(x => x.active()).filter(x => x.order > FormStepsManager.currentStep().order);
 
