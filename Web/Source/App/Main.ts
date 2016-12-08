@@ -8,6 +8,8 @@ import { ProductService } from "App/Services/ProductService";
 import { PriceService } from "App/Services/PriceService";
 import { LabelService } from "App/Services/LabelService";
 import { BookingDataService } from "App/Services/BookingDataService";
+import { PhonenumberValidationRule } from "App/Validation/PhonenumberValidationRule";
+import { NoHtmlValidationRule } from 'App/Validation/NoHtmlValidationRule';
 
 export class Main {
 
@@ -44,6 +46,9 @@ export class Main {
     }
 
     static initializeValidation() {
+
+        PhonenumberValidationRule.init();
+        NoHtmlValidationRule.init();
 
         ko.validation.rules["required"].message = "Required field";
         ko.validation.rules["email"].message = "Invalid email format";

@@ -9,46 +9,56 @@
     <div class="panel-body">
 
         <indi-textfield params="field: bookingData.customer.firstName,
-                            required: false,
+                            required: true,
                             maxLength: 24,
                             labelKey: 'customer/firstName',
                             name:'firstname', validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.lastName,
+                            required: true,
                             labelKey: 'customer/lastName',
                             name:'lastname',
+                            maxLength: 50,
                             validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.street,
                             labelKey: 'customer/street',
                             name:'street',
+                            required: true,
+                            maxLength: 50,
                             validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.houseNumber,
                             labelKey: 'customer/houseNumber',
                             name:'housenumber',
+                            number: true,
+                            required: true,
                             validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.city,
                             labelKey: 'customer/city',
                             name:'city',
+                            required: true,
+                            maxLength: 30,
                             validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.telephone,
                             labelKey: 'customer/telephone',
                             name:'telephone',
+                            phone: true,
+                            required: true,
                             validationModel: validationModel">
         </indi-textfield>
 
         <indi-textfield params="field: bookingData.customer.email,
                             labelKey: 'customer/email',
                             name:'email',
-                            required: false,
+                            required: true,
                             email: true,
                             validationModel: validationModel">
         </indi-textfield>

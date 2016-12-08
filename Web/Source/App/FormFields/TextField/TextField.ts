@@ -8,9 +8,8 @@ export class TextFieldViewModel extends FieldBase {
     label: Label;
     cssClass: string;
     placeholder: string;
-    voorletters: string;
+    phone: boolean;
     readonly: string;
-    isPdfGeneration: () => boolean;
    
     constructor(params) {
 
@@ -21,10 +20,15 @@ export class TextFieldViewModel extends FieldBase {
         this.cssClass = params.cssClass;
         this.placeholder = params.placeholder;        
         this.readonly = params.readonly;
+        this.phone = params.phone;
 
         this.label = LabelService.getLabel(params.labelKey);
 
-        this.field.extend({ nohtml: true });       
+        this.field.extend({ nohtml: true });
+
+        if (this.readonly) {
+            this.cssClass = "read-only";
+        }       
     }
 }
 

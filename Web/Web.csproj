@@ -224,6 +224,8 @@
     <TypeScriptCompile Include="Source\App\Services\PriceService.ts" />
     <TypeScriptCompile Include="Source\App\Services\LabelService.ts" />
     <TypeScriptCompile Include="Source\App\Services\ProductService.ts" />
+    <TypeScriptCompile Include="Source\App\Validation\NoHtmlValidationRule.ts" />
+    <TypeScriptCompile Include="Source\App\Validation\PhonenumberValidationRule.ts" />
     <TypeScriptCompile Include="typings\globals\es6-promise\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\knockout.mapping\index.d.ts" />

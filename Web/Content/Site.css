@@ -26,6 +26,11 @@ textarea {
 
 }
 
+.read-only {
+
+    background-color: gainsboro;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 940px;
