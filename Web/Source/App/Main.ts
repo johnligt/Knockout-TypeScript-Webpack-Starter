@@ -13,31 +13,33 @@ export class Main {
 
     constructor() {
 
-        CustomBindingHandlers.initialize(); 
         ComponentRegistration.registerComponents();
-       
+
+        const bindingHandlersPromise = CustomBindingHandlers.initialize(); 
         const pricesPromise = PriceService.getPriceList();
         const labelsPromise = LabelService.getLabels();
 
-        let loadData = es6promise.Promise.all([pricesPromise, labelsPromise])
-            .then((result) => {
-
+        let loadData = es6promise.Promise.all([pricesPromise, labelsPromise, bindingHandlersPromise])
+            .then((result) => {                
                 const productsPromise = ProductService.getProductList();
                 return productsPromise;
             })
             .then(
             (result) => {
                 
-                let viewModel = new BookingData();
+                $(() => {                    
+                    
+                    const viewModel = new BookingData();                   
+                    ko.applyBindings(viewModel);
+                    
+                    console.log("Applied bindings");
 
-                ko.applyBindings(viewModel);
+                    BookingDataService.setBookingData(viewModel);
 
-                BookingDataService.setBookingData(viewModel);
-
-                console.log("Applied bindings");
-
-                Main.initializeValidation();
-                
+                    Main.initializeValidation();
+                   
+                });
+               
             });
     }
 
