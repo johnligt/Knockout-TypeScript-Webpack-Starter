@@ -1,4 +1,6 @@
-﻿<h3><indi-label params="labelKey: 'general/your-shopping-bag'"></indi-label></h3>
+﻿<!-- ko if: visible() -->
+
+<h3><indi-label params="labelKey: 'general/your-shopping-bag'"></indi-label></h3>
 
 <!-- ko foreach: selectedProducts() -->
 
@@ -25,3 +27,5 @@
     </div>
     
 </div>
+
+<!-- /ko -->

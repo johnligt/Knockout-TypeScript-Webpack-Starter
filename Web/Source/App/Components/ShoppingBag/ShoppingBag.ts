@@ -2,11 +2,13 @@
 import { ProductService } from "App/Services/ProductService";
 import { BookingDataService } from "App/Services/BookingDataService";
 import { BookingData } from "App/Models/BookingData";
+import { FormStepsManager } from "App/FormSteps/FormStepsManager";
 
 export class ShoppingBagViewModel {
 
     selectedProducts: KnockoutComputed<Product[]>;   
     total: KnockoutComputed<number>;
+    visible: KnockoutComputed<boolean>;
 
     constructor(params) {
         
@@ -19,7 +21,10 @@ export class ShoppingBagViewModel {
         this.total = ko.computed(() => {
             return BookingDataService.getTotal();            
         });
-            
+
+        this.visible = ko.computed(() => {
+            return FormStepsManager.currentStep().order < 2;
+        }); 
     }
 }
 
