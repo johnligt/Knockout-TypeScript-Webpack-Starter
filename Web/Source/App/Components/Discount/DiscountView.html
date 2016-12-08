@@ -1,16 +1,20 @@
-﻿<h3>
-    <indi-label params="labelKey: 'select-products/choose-discount'"></indi-label>
-</h3>
+﻿<div class="panel panel-default">
+    <div class="panel-body">
+        <h3>
+            <indi-label params="labelKey: 'select-products/choose-discount'"></indi-label>
+        </h3>
 
-<div>
-    <input type="radio" name="discount" data-bind="checkedValue: 0, checked: selectedDiscount" />
-    No discount
-</div>
-<div>
-    <input type="radio" name="discount" value="1" data-bind="checkedValue: 1, checked: selectedDiscount" />
-    Normal discount
-</div>
-<div>
-    <input type="radio" name="discount" value="2" data-bind="checkedValue: 2, checked: selectedDiscount" />
-    Super discount
+        <div>
+            <input type="radio" name="discount" data-bind="checkedValue: 0, checked: selectedDiscount" />
+            No discount
+        </div>
+        <div>
+            <input type="radio" name="discount" value="1" data-bind="checkedValue: 1, checked: selectedDiscount" />
+            Normal discount
+        </div>
+        <div>
+            <input type="radio" name="discount" value="2" data-bind="checkedValue: 2, checked: selectedDiscount" />
+            Super discount
+        </div>
+    </div>
 </div>

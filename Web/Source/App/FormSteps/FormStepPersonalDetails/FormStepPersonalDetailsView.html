@@ -1,53 +1,58 @@
 ﻿<!-- ko if: visible() && active() -->
 
-<h2>
-    <indi-label params="labelKey: 'general/personal-details'"></indi-label>
-</h2>
+<div class="panel panel-default">
+    <div class="panel-body">
 
-<indi-textfield params="field: bookingData.customer.firstName, 
-                            required: false,                                                      
+        <h2>
+            <indi-label params="labelKey: 'general/personal-details'"></indi-label>
+        </h2>
+
+        <indi-textfield params="field: bookingData.customer.firstName,
+                            required: false,
                             maxLength: 24,
                             labelKey: 'customer/firstName',
                             name:'firstname', validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.lastName,
+        <indi-textfield params="field: bookingData.customer.lastName,
                             labelKey: 'customer/lastName',
-                            name:'lastname', 
+                            name:'lastname',
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.street,
+        <indi-textfield params="field: bookingData.customer.street,
                             labelKey: 'customer/street',
-                            name:'street', 
+                            name:'street',
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.houseNumber,
+        <indi-textfield params="field: bookingData.customer.houseNumber,
                             labelKey: 'customer/houseNumber',
-                            name:'housenumber', 
+                            name:'housenumber',
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.city,
+        <indi-textfield params="field: bookingData.customer.city,
                             labelKey: 'customer/city',
-                            name:'city', 
+                            name:'city',
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.telephone,
+        <indi-textfield params="field: bookingData.customer.telephone,
                             labelKey: 'customer/telephone',
-                            name:'telephone', 
+                            name:'telephone',
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.email,
+        <indi-textfield params="field: bookingData.customer.email,
                             labelKey: 'customer/email',
-                            name:'email', 
+                            name:'email',
                             required: false,
                             email: true,
                             validationModel: validationModel">
-</indi-textfield>
+        </indi-textfield>
 
+    </div>
+</div>
 
 <!-- /ko -->

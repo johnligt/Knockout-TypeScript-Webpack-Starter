@@ -2,86 +2,107 @@
 
 <h2>
     <indi-label params="labelKey: 'general/check-and-submit'"></indi-label>
-</h2>    
+</h2>
 
 
-<h3>
-    <indi-label params="labelKey: 'general/your-booking-details'"></indi-label>
-</h3>
+<div class="panel panel-default">
 
-<!-- ko foreach: bookingData.selectedProducts() -->
-
-<div class="row">
-    <div class="col-xs-6">
-        <span data-bind="text: $data.productName"></span>        
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <indi-label params="labelKey: 'general/your-booking-details'"></indi-label>
+        </h3>
     </div>
-    <div class="col-xs-6">
-        <span data-bind="currency: $data.productPrice"></span>        
+
+    <div class="panel-body">
+
+        <!-- ko foreach: bookingData.selectedProducts() -->
+
+        <div class="row">
+            <div class="col-xs-6">
+                <span data-bind="text: $data.productName"></span>
+            </div>
+            <div class="col-xs-6">
+                <span data-bind="currency: $data.productPrice"></span>
+            </div>
+
+        </div>
+
+        <!-- /ko -->
+
+        <hr />
+
+        <div class="row">
+            <div class="col-xs-6">
+                <span>Total</span>
+            </div>
+            <div class="col-xs-6">
+                <span data-bind="currency: total"></span>
+            </div>
+
+        </div>
+
+
+
     </div>
-    
 </div>
 
-<!-- /ko -->
 
-<hr />
+<div class="panel panel-default">
 
-<div class="row">
-    <div class="col-xs-6">
-        <span>Total</span>        
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <indi-label params="labelKey: 'general/your-personal-details'"></indi-label>
+        </h3>
     </div>
-    <div class="col-xs-6">
-        <span data-bind="currency: total"></span>       
-    </div>
-    
-</div>
 
-<h3>
-    <indi-label params="labelKey: 'general/your-personal-details'"></indi-label>
-</h3>
+    <div class="panel-body">
 
-
-<indi-textfield params="field: bookingData.customer.firstName,                             
+        <indi-textfield params="field: bookingData.customer.firstName,
                             labelKey: 'customer/firstName',
                             name:'firstname',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.lastName,
-                            labelKey: 'customer/lastName',                            
+        <indi-textfield params="field: bookingData.customer.lastName,
+                            labelKey: 'customer/lastName',
                             name:'lastname',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.street,
+        <indi-textfield params="field: bookingData.customer.street,
                             labelKey: 'customer/street',
-                            name:'street', 
+                            name:'street',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.houseNumber,
+        <indi-textfield params="field: bookingData.customer.houseNumber,
                             labelKey: 'customer/houseNumber',
                             name:'housenumber',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.city,
+        <indi-textfield params="field: bookingData.customer.city,
                             labelKey: 'customer/city',
-                            name:'city', 
+                            name:'city',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.telephone,
+        <indi-textfield params="field: bookingData.customer.telephone,
                             labelKey: 'customer/telephone',
-                            name:'telephone', 
+                            name:'telephone',
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
 
-<indi-textfield params="field: bookingData.customer.email,
+        <indi-textfield params="field: bookingData.customer.email,
                             labelKey: 'customer/email',
-                            name:'email', 
+                            name:'email',
                             required: true,
                             email: true,
                             readonly: true">
-</indi-textfield>
+        </indi-textfield>
+
+
+    </div>
+</div>
 
 <!-- /ko  -->
