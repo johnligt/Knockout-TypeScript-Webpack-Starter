@@ -1,0 +1,194 @@
+/*
+    This document is used for EPI server to crawl the available icons
+*/
+/* ==========  TYPOGRAPHY  ========== */
+@font-face {
+  font-family: "webfont-icons";
+  src: url("fonts/webfont-icons.eot");
+  src: url("fonts/webfont-icons.eot?#iefix") format("eot"), url("fonts/webfont-icons.woff") format("woff"), url("fonts/webfont-icons.ttf") format("truetype"), url("fonts/webfont-icons.svg#webfont-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: "webfont-icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon {
+  font-family: "webfont-icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon_add-circle:before {
+  content: "\EA01"; }
+
+.icon_add-user:before {
+  content: "\EA02"; }
+
+.icon_add:before {
+  content: "\EA03"; }
+
+.icon_alert-circle:before {
+  content: "\EA04"; }
+
+.icon_android:before {
+  content: "\EA05"; }
+
+.icon_apple:before {
+  content: "\EA06"; }
+
+.icon_arrow-menu:before {
+  content: "\EA07"; }
+
+.icon_arrow:before {
+  content: "\EA08"; }
+
+.icon_bin:before {
+  content: "\EA09"; }
+
+.icon_building:before {
+  content: "\EA0A"; }
+
+.icon_calculator:before {
+  content: "\EA0B"; }
+
+.icon_calendar:before {
+  content: "\EA0C"; }
+
+.icon_chat-bubble:before {
+  content: "\EA0D"; }
+
+.icon_chat:before {
+  content: "\EA0E"; }
+
+.icon_check-circle-dark:before {
+  content: "\EA0F"; }
+
+.icon_check-circle:before {
+  content: "\EA10"; }
+
+.icon_check-file:before {
+  content: "\EA11"; }
+
+.icon_check-shield:before {
+  content: "\EA12"; }
+
+.icon_check:before {
+  content: "\EA13"; }
+
+.icon_clipboard:before {
+  content: "\EA14"; }
+
+.icon_cursor-move:before {
+  content: "\EA15"; }
+
+.icon_email:before {
+  content: "\EA16"; }
+
+.icon_euro-label:before {
+  content: "\EA17"; }
+
+.icon_external:before {
+  content: "\EA18"; }
+
+.icon_facebook:before {
+  content: "\EA19"; }
+
+.icon_fast-forward:before {
+  content: "\EA1A"; }
+
+.icon_female:before {
+  content: "\EA1B"; }
+
+.icon_file-copy:before {
+  content: "\EA1C"; }
+
+.icon_file-pdf:before {
+  content: "\EA1D"; }
+
+.icon_file:before {
+  content: "\EA1E"; }
+
+.icon_googleplus:before {
+  content: "\EA1F"; }
+
+.icon_inbox:before {
+  content: "\EA20"; }
+
+.icon_info-circle:before {
+  content: "\EA21"; }
+
+.icon_linkedin:before {
+  content: "\EA22"; }
+
+.icon_male:before {
+  content: "\EA23"; }
+
+.icon_min-circle:before {
+  content: "\EA24"; }
+
+.icon_min:before {
+  content: "\EA25"; }
+
+.icon_mobile:before {
+  content: "\EA26"; }
+
+.icon_penarrow:before {
+  content: "\EA27"; }
+
+.icon_pencil:before {
+  content: "\EA28"; }
+
+.icon_phone:before {
+  content: "\EA29"; }
+
+.icon_question:before {
+  content: "\EA2A"; }
+
+.icon_sate-menu:before {
+  content: "\EA2B"; }
+
+.icon_search:before {
+  content: "\EA2C"; }
+
+.icon_settings:before {
+  content: "\EA2D"; }
+
+.icon_swipe-hor:before {
+  content: "\EA2E"; }
+
+.icon_tab-menu:before {
+  content: "\EA2F"; }
+
+.icon_twitter:before {
+  content: "\EA30"; }
+
+.icon_user:before {
+  content: "\EA31"; }
+
+.icon_vote-medal:before {
+  content: "\EA32"; }
+
+.icon_wizard:before {
+  content: "\EA33"; }
+
+.icon_youtube:before {
+  content: "\EA34"; }

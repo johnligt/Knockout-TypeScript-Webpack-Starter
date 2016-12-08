@@ -90,7 +90,7 @@
   {
     "labelKey": "select-products/choose-discount",
     "labelText": "Choose your discount!",
-    "infoText": "",
+    "infoText": "Choose any level you like, this is just for demo purposes, there are no requirements. This is also a demo for the tooltip.",
     "optionValue": "",
     "cssClass": "",
     "linkUrl": ""

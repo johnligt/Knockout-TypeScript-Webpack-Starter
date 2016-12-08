@@ -52,6 +52,7 @@ export class NavigationViewModel {
         }
     }
 
+    //The submit step is the next to last step.
     isSubmitStep(): boolean {
 
         if (FormStepsManager.currentStep === undefined || FormStepsManager.currentStep === null) {

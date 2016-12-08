@@ -1,6 +1,6 @@
 ﻿body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+        
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,4 +24,10 @@ textarea {
     color: red;
     padding-left: 10px;
 
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
 }
