@@ -12,10 +12,7 @@ namespace Data.Models
 
         [JsonProperty(PropertyName = "productPrice")]
         public double ProductPrice { get; set; }
-
-        [JsonProperty(PropertyName = "productDiscountPrice")]
-        public string ProductDiscountPrice { get; set; }
-
+        
         [JsonProperty(PropertyName = "isSelected")]
         public bool IsSelected { get; set; }
     }
