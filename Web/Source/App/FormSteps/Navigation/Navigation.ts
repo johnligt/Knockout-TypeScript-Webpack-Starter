@@ -13,7 +13,33 @@ export class NavigationViewModel {
     currentStep: KnockoutObservable<FormStepBase>;
 
     constructor(params) {
+
+        const self = this;
+
         this.currentStep = FormStepsManager.currentStep;
+
+        location.hash = "0";
+
+        $(window).on("hashchange", (e) => {
+
+            
+            if (FormStepsManager.currentStep === undefined) {
+                return;
+            }
+
+            const currentStep = <number>FormStepsManager.currentStep().formStep;
+            const locationHash = Number(location.hash.substr(1));
+
+            if (locationHash < currentStep && !self.isLastStep()) {
+                FormStepsManager.goToPreviousStep();
+            }
+
+            if (locationHash > currentStep && !self.isLastStep()) {
+                FormStepsManager.goToNextStep();
+            }
+            
+        });
+
     }
 
     doSubmit() {

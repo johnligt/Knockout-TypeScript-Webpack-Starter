@@ -1,11 +1,12 @@
 ﻿<!-- ko if: visible() && active() -->
 
 <div class="panel panel-default">
-    <div class="panel-body">
-
-        <h2>
+    <div class="panel-heading">
+        <h3 class="panel-title">
             <indi-label params="labelKey: 'general/personal-details'"></indi-label>
-        </h2>
+        </h3>
+    </div>
+    <div class="panel-body">
 
         <indi-textfield params="field: bookingData.customer.firstName,
                             required: false,

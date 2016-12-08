@@ -1,9 +1,13 @@
 ﻿<!-- ko if: visible() -->
 
 <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <indi-label params="labelKey: 'general/your-shopping-bag'"></indi-label>
+        </h3>
+  </div>
     <div class="panel-body">
-        <h3><indi-label params="labelKey: 'general/your-shopping-bag'"></indi-label></h3>
-
+       
         <!-- ko foreach: selectedProducts() -->
 
         <div class="row">
@@ -18,7 +22,7 @@
 
         <!-- /ko -->
 
-        <hr />
+        <hr/>
 
         <div class="row">
             <div class="col-xs-6">
