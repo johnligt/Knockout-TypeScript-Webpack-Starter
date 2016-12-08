@@ -80,6 +80,166 @@
     "linkUrl": ""
   },
   {
+    "labelKey": "select-products/book-hero",
+    "labelText": "Book your favorite Super Heroes!",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "select-products/choose-discount",
+    "labelText": "Choose your discount!",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-shopping-bag",
+    "labelText": "Your shopping bag",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/personal-details",
+    "labelText": "Personal details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/check-and-submit",
+    "labelText": "Check and submit your booking",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-booking-details",
+    "labelText": "Your booking details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-personal-details",
+    "labelText": "Your personal details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
     "labelKey": "",
     "labelText": "",
     "infoText": "",

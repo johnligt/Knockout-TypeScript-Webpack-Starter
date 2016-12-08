@@ -210,8 +210,6 @@
     <TypeScriptCompile Include="Source\App\Main.ts" />
     <TypeScriptCompile Include="Source\App\Models\Customer.ts" />
     <TypeScriptCompile Include="Source\App\Models\Label.ts" />
-    <TypeScriptCompile Include="Source\App\Models\Order.ts" />
-    <TypeScriptCompile Include="Source\App\Models\OrderDetail.ts" />
     <TypeScriptCompile Include="Source\App\Models\Price.ts" />
     <TypeScriptCompile Include="Source\App\Models\Product.ts" />
     <TypeScriptCompile Include="Source\App\Services\BookingDataService.ts" />

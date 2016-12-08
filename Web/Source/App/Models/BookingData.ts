@@ -1,14 +1,13 @@
 ﻿import { Customer } from "./Customer";
-import { Order } from "./Order";
+import { Product } from "App/Models/Product";
 
 export class BookingData {
 
     customer: Customer;
-    order: Order;
-
+    selectedProducts: KnockoutObservableArray<Product>;
 
     constructor() {
         this.customer = new Customer();
-        this.order = new Order();      
+        this.selectedProducts = ko.observableArray<Product>();
     }
 }

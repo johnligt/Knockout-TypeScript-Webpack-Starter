@@ -1,5 +1,7 @@
 ﻿import { Product } from "App/Models/Product";
 import { ProductService } from "App/Services/ProductService";
+import { BookingDataService } from "App/Services/BookingDataService";
+import { BookingData } from "App/Models/BookingData";
 
 export class ShoppingBagViewModel {
 
@@ -7,9 +9,7 @@ export class ShoppingBagViewModel {
     total: KnockoutComputed<number>;
 
     constructor(params) {
-
-        let self = this;
-
+        
         this.selectedProducts = ko.computed(() => {
 
             return ProductService.productList.filter(x => x.isSelected());
@@ -17,14 +17,7 @@ export class ShoppingBagViewModel {
         });
 
         this.total = ko.computed(() => {
-
-            let total = 0;
-
-            for (let product of self.selectedProducts()) {
-                total += product.productPrice();
-            }
-
-            return total;
+            return BookingDataService.getTotal();            
         });
             
     }

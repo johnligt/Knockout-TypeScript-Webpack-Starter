@@ -1,5 +1,7 @@
 ﻿import { Product } from "App/Models/Product";
 import { ProductService } from "App/Services/ProductService";
+import { BookingDataService } from "App/Services/BookingDataService";
+import { BookingData } from "App/Models/BookingData";
 
 export class ProductListViewModel {
 
@@ -10,24 +12,23 @@ export class ProductListViewModel {
 
     hasDiscount: KnockoutObservable<boolean>;
 
+    bookingData: BookingData;
+
     constructor(params) {
 
         this.products = ProductService.productList;
-
+        this.bookingData = BookingDataService.getBookingData();
+        
         this.addProduct = (product: Product) => {
-            product.isSelected(true);            
-            console.log(`Added ${product.productName}`);
+            BookingDataService.addProduct(product);          
         }
 
         this.removeProduct = (product: Product) => {
-            product.isSelected(false);            
-            console.log(`Removed ${product.productName}`);
+            BookingDataService.removeProduct(product);            
         }
 
         this.hasDiscount = ko.observable(true);
-
     }
-
 }
 
 export class ProductListComponent {
