@@ -42,8 +42,7 @@ module.exports = {
         new CleanWebpackPlugin(['source/build'], {
             root: path.resolve("./"),
             verbose: true
-        }),
-        new webpack.OldWatchingPlugin(),
+        }),        
         new webpack.IgnorePlugin(/vertx/),
         new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
         new webpack.ProvidePlugin({

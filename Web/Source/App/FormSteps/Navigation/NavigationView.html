@@ -1,13 +1,11 @@
-﻿<a class="btn btn-arrow-left btn-large pull-left" title="terug" data-bind="click: goToPreviousStep, visible: !isFirstStep()">
-    <indi-label params="labelKey: 'algemeen/terug'"></indi-label>
-    Back
+﻿<a class="btn btn-arrow-left btn-large pull-left" title="Bacl" data-bind="click: goToPreviousStep, visible: !isFirstStep()">
+    <indi-label params="labelKey: 'general/back'"></indi-label>
 </a>
 
 <button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: goToNextStep, visible: !isLastStep()">
-    <indi-label params="labelKey: 'algemeen/ga-verder'"></indi-label>
-    Next
+    <indi-label params="labelKey: 'general/next'"></indi-label>
 </button>
 
 <button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: submitAanvraag, visible: isLastStep()">
-    Submit
+    <indi-label params="labelKey: 'general/submit'"></indi-label>
 </button>

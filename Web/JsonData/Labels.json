@@ -1,0 +1,98 @@
+﻿[
+  {
+    "labelKey": "customer/firstName",
+    "labelText": "First name",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/back",
+    "labelText": "Back",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/next",
+    "labelText": "Next",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/submit",
+    "labelText": "Submit",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  }
+]

@@ -6,6 +6,8 @@ import { ComponentRegistration } from "App/ComponentRegistration";
 import { BookingData } from "App/Models/BookingData";
 import { ProductService } from "App/Services/ProductService";
 import { PriceService } from "App/Services/PriceService";
+import { LabelService } from "App/Services/LabelService";
+import { BookingDataService } from "App/Services/BookingDataService";
 
 export class Main {
 
@@ -15,8 +17,9 @@ export class Main {
         ComponentRegistration.registerComponents();
        
         const pricesPromise = PriceService.getPriceList();
+        const labelsPromise = LabelService.getLabels();
 
-        let loadData = es6promise.Promise.all([pricesPromise])
+        let loadData = es6promise.Promise.all([pricesPromise, labelsPromise])
             .then((result) => {
 
                 const productsPromise = ProductService.getProductList();
@@ -28,6 +31,8 @@ export class Main {
                 let viewModel = new BookingData();
 
                 ko.applyBindings(viewModel);
+
+                BookingDataService.setBookingData(viewModel);
 
                 console.log("Applied bindings");
 

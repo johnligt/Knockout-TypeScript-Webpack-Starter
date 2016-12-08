@@ -6,27 +6,33 @@ import { FormStepSelectProductsComponent } from "App/FormSteps/FormStepSelectPro
 import { FormStepPersonalDetailsComponent } from "App/FormSteps/FormStepPersonalDetails/FormStepPersonalDetails";
 import { FormStepCheckComponent } from "App/FormSteps/FormStepCheck/FormStepCheck";
 import { NavigationComponent } from "App/FormSteps/Navigation/Navigation";
+import { LabelComponent } from "App/FormFields/Label/Label";
+import { TextFieldComponent } from "App/FormFields/TextField/TextField";
+
 
 export class ComponentRegistration {
     
     static registerComponents = () => {
 
         //MainForm, contains all other components, either directly or as nested components.
-        ko.components.register("st-main-form", new MainFormComponent());
+        ko.components.register("indi-main-form", new MainFormComponent());
 
         //FormSteps
-        ko.components.register("st-formstep-selectproducts", new FormStepSelectProductsComponent());
-        ko.components.register("st-formstep-personaldetails", new FormStepPersonalDetailsComponent());
-        ko.components.register("st-formstep-check", new FormStepCheckComponent());
+        ko.components.register("indi-formstep-selectproducts", new FormStepSelectProductsComponent());
+        ko.components.register("indi-formstep-personaldetails", new FormStepPersonalDetailsComponent());
+        ko.components.register("indi-formstep-check", new FormStepCheckComponent());
 
         // FormStep Navigation
-        ko.components.register("st-navigation", new NavigationComponent());
+        ko.components.register("indi-navigation", new NavigationComponent());
 
         //Components
-        ko.components.register("st-product-list", new ProductListComponent());
-        ko.components.register("st-shopping-bag", new ShoppingBagComponent());
-        ko.components.register("st-discount", new DiscountComponent());
+        ko.components.register("indi-product-list", new ProductListComponent());
+        ko.components.register("indi-shopping-bag", new ShoppingBagComponent());
+        ko.components.register("indi-discount", new DiscountComponent());
 
+        //FormFields
+        ko.components.register("indi-label", new LabelComponent());
+        ko.components.register("indi-textfield", new TextFieldComponent());
 
     }
 

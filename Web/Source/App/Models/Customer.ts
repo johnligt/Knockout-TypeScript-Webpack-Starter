@@ -8,4 +8,14 @@
     telephone: KnockoutObservable<string>;
     email: KnockoutObservable<string>;
 
+    constructor() {
+        this.lastName = ko.observable("");
+        this.firstName = ko.observable("");
+        this.street = ko.observable("");
+        this.houseNumber = ko.observable("");
+        this.city = ko.observable("");
+        this.telephone = ko.observable("");
+        this.email = ko.observable("");
+    }
+
 }

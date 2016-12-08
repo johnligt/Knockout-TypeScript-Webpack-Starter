@@ -5,10 +5,10 @@ export class BookingData {
 
     customer: Customer;
     order: Order;
-    hasDiscount: KnockoutObservable<boolean>;
 
 
     constructor() {
-        //this.title = ko.observable("test");
+        this.customer = new Customer();
+        this.order = new Order();      
     }
 }

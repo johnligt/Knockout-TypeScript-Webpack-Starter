@@ -6,7 +6,7 @@ namespace Web.Controllers.api
 {
     public class ProductsController : ApiController
     {
-         [HttpGet]
+        [HttpGet]
         public IEnumerable<Product> Get() 
         {
             return Data.Repository.ProductsRepository.GetProducts();

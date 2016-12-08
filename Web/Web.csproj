@@ -124,6 +124,8 @@
     <Content Include="Source\App\Components\ShoppingBag\ShoppingBagView.html" />
     <Content Include="Source\App\Components\Discount\DiscountView.html" />
     <Content Include="Source\App\Components\Template\TemplateView.html" />
+    <Content Include="Source\App\FormFields\Label\LabelView.html" />
+    <Content Include="Source\App\FormFields\TextField\TextFieldView.html" />
     <Content Include="Source\App\MainForm\MainFormView.html" />
     <Content Include="Source\App\FormSteps\FormStepCheck\FormStepCheckView.html" />
     <Content Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetailsView.html" />
@@ -137,6 +139,8 @@
     <Content Include="Source\Lib\jquery-ui.js" />
     <Content Include="Source\Lib\knockout-3.4.0.debug.js" />
     <Content Include="Source\Lib\knockout-3.4.0.js" />
+    <Content Include="Source\Lib\knockout.validation.js" />
+    <Content Include="Source\Lib\knockout.validation.min.js" />
     <Content Include="Source\Lib\modernizr-custom.js" />
     <Content Include="Source\Lib\moment.js" />
     <Content Include="Source\Lib\moment.min.js" />
@@ -147,6 +151,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\api\PricesController.cs" />
+    <Compile Include="Controllers\api\LabelsController.cs" />
     <Compile Include="Controllers\api\ProductsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -172,6 +177,8 @@
     <Content Include="typings\globals\underscore\typings.json" />
     <Content Include="JsonData\Products.json" />
     <Content Include="JsonData\Prices.json" />
+    <Content Include="JsonData\Labels.json" />
+    <Content Include="Source\Lib\knockout.validation.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -186,7 +193,10 @@
     <TypeScriptCompile Include="Source\App\Components\ProductList\ProductList.ts" />
     <TypeScriptCompile Include="Source\App\Components\ShoppingBag\ShoppingBag.ts" />
     <TypeScriptCompile Include="Source\App\Components\Discount\Discount.ts" />
+    <TypeScriptCompile Include="Source\App\FormFields\Label\Label.ts" />
+    <TypeScriptCompile Include="Source\App\FormFields\TextField\TextField.ts" />
     <TypeScriptCompile Include="Source\App\CustomBindingHandlers.ts" />
+    <TypeScriptCompile Include="Source\App\FormFields\FieldBase.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepBase.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepCheck\FormStepCheck.ts" />
     <TypeScriptCompile Include="Source\App\FormSteps\FormStepPersonalDetails\FormStepPersonalDetails.ts" />
@@ -199,11 +209,14 @@
     <TypeScriptCompile Include="Source\App\MainForm\MainForm.ts" />
     <TypeScriptCompile Include="Source\App\Main.ts" />
     <TypeScriptCompile Include="Source\App\Models\Customer.ts" />
+    <TypeScriptCompile Include="Source\App\Models\Label.ts" />
     <TypeScriptCompile Include="Source\App\Models\Order.ts" />
     <TypeScriptCompile Include="Source\App\Models\OrderDetail.ts" />
     <TypeScriptCompile Include="Source\App\Models\Price.ts" />
     <TypeScriptCompile Include="Source\App\Models\Product.ts" />
+    <TypeScriptCompile Include="Source\App\Services\BookingDataService.ts" />
     <TypeScriptCompile Include="Source\App\Services\PriceService.ts" />
+    <TypeScriptCompile Include="Source\App\Services\LabelService.ts" />
     <TypeScriptCompile Include="Source\App\Services\ProductService.ts" />
     <TypeScriptCompile Include="typings\globals\es6-promise\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jquery\index.d.ts" />
