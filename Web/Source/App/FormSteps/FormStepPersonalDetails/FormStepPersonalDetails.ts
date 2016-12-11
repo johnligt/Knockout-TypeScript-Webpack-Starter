@@ -1,6 +1,4 @@
-﻿require(["jquery"]);
-import ko = require("knockout");
-import { FormStepBase, FormStepEnum } from "App/FormSteps/FormStepBase";
+﻿import { FormStepBase, FormStepEnum } from "App/FormSteps/FormStepBase";
 import { BookingDataService } from "App/Services/BookingDataService";
 import { BookingData } from "App/Models/BookingData";
 

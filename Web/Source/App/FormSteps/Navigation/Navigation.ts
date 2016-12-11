@@ -1,7 +1,4 @@
-﻿require("expose?window.jQuery!jquery");
-//require('jquery.redirect');
-import ko = require("knockout");
-import validation = require("knockout.validation");
+﻿import validation = require("knockout.validation");
 import { FormStepsManager } from "App/FormSteps/FormStepsManager";
 import { FormStepBase } from "App/FormSteps/FormStepBase";
 import { BookingDataService } from "App/Services/BookingDataService";
