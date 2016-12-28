@@ -11,10 +11,10 @@ namespace Data.Models
         public double ProductDefaultPrice { get; set; }
 
         [JsonProperty(PropertyName = "productDiscountPrice")]
-        public string ProductDiscountPrice { get; set; }
+        public double ProductDiscountPrice { get; set; }
 
-         [JsonProperty(PropertyName = "productSuperDiscountPrice")]
-        public string ProductSuperDiscountPrice { get; set; }
+        [JsonProperty(PropertyName = "productSuperDiscountPrice")]
+        public double ProductSuperDiscountPrice { get; set; }
        
     }
 }

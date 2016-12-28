@@ -26,9 +26,9 @@ export class BookingDataService {
         console.log(`Removed ${product.productName}`);
     }
 
-    static getTotal(): number  {
-        
-        let total = 0;
+    static getTotal(): number {
+
+        let total: number = 0; 
 
         for (let product of BookingDataService.bookingData.selectedProducts() ) {
             total += product.productPrice();

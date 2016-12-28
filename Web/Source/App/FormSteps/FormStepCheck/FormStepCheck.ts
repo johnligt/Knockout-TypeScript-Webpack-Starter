@@ -7,9 +7,9 @@ import { BookingData } from "App/Models/BookingData";
 export class FormStepCheckViewModel extends FormStepBase {
     
     doInit: () => void;
-    isLoaded: KnockoutObservable<boolean>;
+    //isLoaded: KnockoutObservable<boolean>;
     bookingData: BookingData;
-    total: number;
+    total: KnockoutComputed<number>;
     
     constructor(params) {
 
@@ -17,10 +17,13 @@ export class FormStepCheckViewModel extends FormStepBase {
         
         this.visible = ko.observable(false);
         this.active = ko.observable(true);
-        this.isLoaded = ko.observable(false);
+        //this.isLoaded = ko.observable(false);
 
         this.bookingData = BookingDataService.getBookingData();
-        this.total = BookingDataService.getTotal();
+
+        this.total = ko.computed(() => {
+            return BookingDataService.getTotal();
+        });
 
         this.formStep = FormStepEnum.FormStepCheck;
         
