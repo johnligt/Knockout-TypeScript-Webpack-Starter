@@ -1,6 +1,4 @@
-﻿require(["jquery"]);
-import ko = require("knockout");
-import { FormStepBase, FormStepEnum } from "App/FormSteps/FormStepBase"; 
+﻿import { FormStepBase, FormStepEnum } from "App/FormSteps/FormStepBase"; 
 
 export class FormStepSelectProductsViewModel extends FormStepBase {
     

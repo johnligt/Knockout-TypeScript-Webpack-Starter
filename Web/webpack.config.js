@@ -9,9 +9,7 @@ module.exports = {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
         root: path.resolve("./Source/"),
         alias: {
-            "jquery": "lib/jquery-2.2.4",
-            "jquery-ui.datepicker": "lib/jquery-ui.datepicker",
-            "jquery.redirect": "lib/jquery.redirect",          
+            "jquery": "lib/jquery-2.2.4",            
             "modernizr": "lib/modernizr-custom",
             "knockout": "lib/knockout-3.4.0.debug",
             "knockout.mapping": "lib/knockout.mapping-latest",

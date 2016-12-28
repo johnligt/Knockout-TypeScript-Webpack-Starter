@@ -10,7 +10,6 @@ import { NavigationComponent } from "App/FormSteps/Navigation/Navigation";
 import { LabelComponent } from "App/FormFields/Label/Label";
 import { TextFieldComponent } from "App/FormFields/TextField/TextField";
 
-
 export class ComponentRegistration {
     
     static registerComponents = () => {

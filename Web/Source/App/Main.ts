@@ -1,4 +1,5 @@
 ﻿import * as ko from "knockout";
+//require("expose?window.jQuery!jquery");
 require("expose?ko!knockout");
 import es6promise = require("es6-promise");
 import { CustomBindingHandlers } from "App/CustomBindingHandlers";
