@@ -128,6 +128,7 @@
     <Content Include="Source\App\Components\Discount\DiscountView.html" />
     <Content Include="Source\App\Components\Template\TemplateView.html" />
     <Content Include="Source\App\FormFields\Label\LabelView.html" />
+    <Content Include="Source\App\FormFields\TextArea\TextAreaView.html" />
     <Content Include="Source\App\FormFields\TextField\TextFieldView.html" />
     <Content Include="Source\App\FormSteps\FormStepThanks\FormStepThanksView.html" />
     <Content Include="Source\App\MainForm\MainFormView.html" />
@@ -203,6 +204,7 @@
     <TypeScriptCompile Include="Source\App\Components\ShoppingBag\ShoppingBag.ts" />
     <TypeScriptCompile Include="Source\App\Components\Discount\Discount.ts" />
     <TypeScriptCompile Include="Source\App\FormFields\Label\Label.ts" />
+    <TypeScriptCompile Include="Source\App\FormFields\TextArea\TextArea.ts" />
     <TypeScriptCompile Include="Source\App\FormFields\TextField\TextField.ts" />
     <TypeScriptCompile Include="Source\App\CustomBindingHandlers.ts" />
     <TypeScriptCompile Include="Source\App\FormFields\FieldBase.ts" />

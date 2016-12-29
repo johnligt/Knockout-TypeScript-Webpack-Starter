@@ -80,6 +80,14 @@
     "linkUrl": ""
   },
   {
+    "labelKey": "customer/comments",
+    "labelText": "Comments",
+    "infoText": "Anything which you wish to share with us",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
     "labelKey": "select-products/book-hero",
     "labelText": "Book your favorite Super Heroes!",
     "infoText": "",

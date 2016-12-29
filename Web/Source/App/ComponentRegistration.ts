@@ -9,6 +9,7 @@ import { FormStepThanksComponent } from "App/FormSteps/FormStepThanks/FormStepTh
 import { NavigationComponent } from "App/FormSteps/Navigation/Navigation";
 import { LabelComponent } from "App/FormFields/Label/Label";
 import { TextFieldComponent } from "App/FormFields/TextField/TextField";
+import { TextAreaComponent } from "App/FormFields/TextArea/TextArea";
 
 export class ComponentRegistration {
     
@@ -34,6 +35,7 @@ export class ComponentRegistration {
         //FormFields
         ko.components.register("indi-label", new LabelComponent());
         ko.components.register("indi-textfield", new TextFieldComponent());
+        ko.components.register("indi-textarea", new TextAreaComponent());
 
     }
 
