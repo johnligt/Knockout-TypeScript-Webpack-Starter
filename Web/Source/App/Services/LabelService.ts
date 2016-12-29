@@ -4,9 +4,8 @@ import { Label } from "App/Models/Label";
 
 export class LabelService {
 
+    static labelList: Label[];
     private static labelServiceUrl = "/api/labels/";
-
-    public static labelList: Label[];
     private static labelContainer: any;
     
     static getLabels(): any { 

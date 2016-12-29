@@ -1,5 +1,5 @@
-﻿//import ko = require('knockout');
-import validation = require('knockout.validation');
+﻿import validation = require("knockout.validation");
+import { FormStepsManager } from "App/FormSteps/FormStepsManager";
 
 export class FieldBase  {
 
@@ -13,12 +13,13 @@ export class FieldBase  {
     constructor(params) {
 
         this.field = params.field; 
-        this.validationModel = params.validationModel;
+        //this.validationModel = params.validationModel;
+
+        this.validationModel = FormStepsManager.currentStep().validationModel;
+
         this.onblur = params.onblur;
 
-        // why doesnt this work?! http://stackoverflow.com/questions/21050057/force-knockout-subscription-to-trigger-after-focus-blur
         this.field.extend({ notify: 'always' });
-        //this.field.extend({ valueUpdate: 'blur' });
 
         if (this.validationModel) {
             this.validationModel.push(this.field);
@@ -41,28 +42,13 @@ export class FieldBase  {
         }
         if (params.maxLength !== undefined) {
             this.field.extend({ maxLength: params.maxLength });
-        }
-        if (params.tussenvoegsel !== undefined) {
-            this.field.extend({ tussenvoegsel: params.tussenvoegsel });
-        }
-        if (params.geslachtRequired !== undefined) {
-            this.field.extend({ geslachtRequired: params.geslachtRequired });
-        }
-        if (params.postcode !== undefined) {
-            this.field.extend({ postcode: params.postcode });
-        }
+        }        
         if (params.pattern !== undefined) {
             this.field.extend({ pattern: params.pattern });
         }
         if (params.phone !== undefined) {
             this.field.extend({ phone: params.phone });
-        }
-        if (params.iban !== undefined) {
-            this.field.extend({ iban: params.iban });
-        }
-        if (params.birthdate !== undefined) {
-            this.field.extend({ birthdate: params.birthdate });
-        }
+        }       
         if (params.date !== undefined) {
             this.field.extend({ date: params.date });
         }

@@ -1,5 +1,5 @@
 ﻿import ko = require("knockout");
-import { FormStepBase, FormStepEnum} from "./FormStepBase";
+import { FormStepBase, FormStepEnum } from "./FormStepBase";
 
 export class FormStepsManager {
     
@@ -18,7 +18,8 @@ export class FormStepsManager {
 
         if (FormStepsManager.currentStep === undefined && formStep.order === 0) {
             FormStepsManager.currentStep = ko.observable(formStep);
-            FormStepsManager.firstStepIsLoaded(true);            
+            FormStepsManager.firstStepIsLoaded(true);
+            //ValidationService.validationModel = FormStepsManager.currentStep().validationModel;
         }
     }
 
