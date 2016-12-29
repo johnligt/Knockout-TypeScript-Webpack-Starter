@@ -18,6 +18,9 @@ export class FormStepBase  {
         this.validationModel = new Array<KnockoutObservable<any>>();
 
         FormStepsManager.addFormStep(this);
+
+        this.visible = ko.observable(false);
+        this.active = ko.observable(true);
     }
 }
 

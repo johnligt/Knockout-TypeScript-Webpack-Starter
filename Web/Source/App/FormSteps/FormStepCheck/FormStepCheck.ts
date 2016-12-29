@@ -5,7 +5,6 @@ import { BookingData } from "App/Models/BookingData";
 export class FormStepCheckViewModel extends FormStepBase {
     
     doInit: () => void;
-    //isLoaded: KnockoutObservable<boolean>;
     bookingData: BookingData;
     total: KnockoutComputed<number>;
     
@@ -13,10 +12,6 @@ export class FormStepCheckViewModel extends FormStepBase {
 
         super(params);
         
-        this.visible = ko.observable(false);
-        this.active = ko.observable(true);
-        //this.isLoaded = ko.observable(false);
-
         this.bookingData = BookingDataService.getBookingData();
 
         this.total = ko.computed(() => {

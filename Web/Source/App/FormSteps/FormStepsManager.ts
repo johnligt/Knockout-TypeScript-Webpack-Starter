@@ -6,8 +6,7 @@ export class FormStepsManager {
     static formSteps: Array<FormStepBase>;
     static currentStep: KnockoutObservable<FormStepBase>;
 
-
-    static formStepsLoaded: KnockoutObservable<boolean> = ko.observable(false);
+    static firstStepIsLoaded: KnockoutObservable<boolean> = ko.observable(false);
  
     static addFormStep(formStep: FormStepBase) {
 
@@ -19,8 +18,7 @@ export class FormStepsManager {
 
         if (FormStepsManager.currentStep === undefined && formStep.order === 0) {
             FormStepsManager.currentStep = ko.observable(formStep);
-
-            FormStepsManager.formStepsLoaded(true);            
+            FormStepsManager.firstStepIsLoaded(true);            
         }
     }
 

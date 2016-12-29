@@ -13,9 +13,7 @@ export class ShoppingBagViewModel {
     constructor(params) {
         
         this.selectedProducts = ko.computed(() => {
-
             return ProductService.productList.filter(x => x.isSelected());
-
         });
 
         this.total = ko.computed(() => {

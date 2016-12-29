@@ -21,8 +21,7 @@ module.exports = {
         }
     },
     entry: {
-        app: "./App/Main.ts" //,
-        //lib: "./Lib/lib.js"
+        app: "./App/Main.ts"
     },
     output: {
         path: path.resolve("./Build"),

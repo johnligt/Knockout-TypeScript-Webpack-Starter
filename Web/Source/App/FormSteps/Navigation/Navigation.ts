@@ -15,6 +15,8 @@ export class NavigationViewModel {
 
         this.currentStep = FormStepsManager.currentStep;
 
+        this.currentStep().visible(true);
+
         location.hash = "0";
 
         $(window).on("hashchange", (e) => {

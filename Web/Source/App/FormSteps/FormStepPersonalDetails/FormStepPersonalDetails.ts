@@ -4,7 +4,6 @@ import { BookingData } from "App/Models/BookingData";
 
 export class FormStepPersonalDetailsViewModel extends FormStepBase {
     
-    isLoaded: KnockoutObservable<boolean>;
     bookingData: BookingData;
     
     constructor(params) {
@@ -12,10 +11,7 @@ export class FormStepPersonalDetailsViewModel extends FormStepBase {
         super(params);
         
         this.bookingData = BookingDataService.getBookingData();
-        this.visible = ko.observable(false);
-        this.active = ko.observable(true);
-        this.isLoaded = ko.observable(false);
-
+       
         this.formStep = FormStepEnum.FormStepPersonalDetails;        
     }
 }
