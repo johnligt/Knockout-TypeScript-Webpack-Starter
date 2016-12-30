@@ -29,9 +29,6 @@ export class PriceService {
                 console.log("Price list initialized");
                 resolve(request.responseJSON);
                 
-            }).done(
-            () => {
-                //resolve(request.responseJSON);
             });
             
             request.fail(

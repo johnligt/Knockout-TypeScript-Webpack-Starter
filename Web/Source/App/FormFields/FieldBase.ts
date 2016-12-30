@@ -13,8 +13,7 @@ export class FieldBase  {
     constructor(params) {
 
         this.field = params.field; 
-        //this.validationModel = params.validationModel;
-
+        
         this.validationModel = FormStepsManager.currentStep().validationModel;
 
         this.onblur = params.onblur;
