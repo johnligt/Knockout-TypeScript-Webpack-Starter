@@ -1,0 +1,23 @@
+﻿[
+  {
+    "productId": 1,
+    "productName": "Batman"
+  },
+  {
+    "productId": 2,
+    "productName": "Superman"
+  },
+  {
+    "productId": 3,
+    "productName": "Spiderman"
+  },
+  {
+    "productId": 4,
+    "productName": "Hulk"
+  },
+  {
+    "productId": 5,
+    "productName": "Iron Man"
+  }
+]
+

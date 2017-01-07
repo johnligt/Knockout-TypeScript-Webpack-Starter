@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super hero booking form</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />  
+    <link href="~/Content/icons-standalone.css" rel="stylesheet" />
 </head>
 <body>
    
-    @RenderBody()
+    <div class="container">
+        @RenderBody()    
+    </div>
    
+    <script src="~/Build/vendor.js"></script>
     <script src="~/Build/app.bundle.js"></script>
   
 </body>

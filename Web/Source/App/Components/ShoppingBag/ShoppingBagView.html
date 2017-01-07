@@ -1,0 +1,39 @@
+﻿<!-- ko if: visible() -->
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <indi-label params="labelKey: 'general/your-shopping-bag'"></indi-label>
+        </h3>
+  </div>
+    <div class="panel-body">
+       
+        <!-- ko foreach: selectedProducts() -->
+
+        <div class="row">
+            <div class="col-xs-6">
+                <span data-bind="text: $data.productName"></span>
+            </div>
+            <div class="col-xs-6">
+                <span data-bind="currency: $data.productPrice"></span>
+            </div>
+
+        </div>
+
+        <!-- /ko -->
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <span>Total</span>
+            </div>
+            <div class="col-xs-6">
+                <span data-bind="currency: total"></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- /ko -->

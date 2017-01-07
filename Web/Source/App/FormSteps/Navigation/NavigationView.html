@@ -1,0 +1,17 @@
+﻿<div class="panel panel-default" data-bind="visible: !isLastStep()">
+    <div class="panel-body">
+
+        <a class="btn btn-arrow-left btn-large pull-left" title="Back" data-bind="click: goToPreviousStep, visible: !isFirstStep() && !isLastStep()">
+            <indi-label params="labelKey: 'general/back'"></indi-label>
+        </a>
+
+        <button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: goToNextStep, visible: !isLastStep() && !isSubmitStep() ">
+            <indi-label params="labelKey: 'general/next'"></indi-label>
+        </button>
+
+        <button type="submit" class="btn btn-beta btn-arrow btn-large" data-bind="click: doSubmit, visible: isSubmitStep()">
+            <indi-label params="labelKey: 'general/submit'"></indi-label>
+        </button>
+
+    </div>
+</div>

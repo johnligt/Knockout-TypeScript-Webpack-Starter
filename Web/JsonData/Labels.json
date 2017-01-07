@@ -1,0 +1,266 @@
+﻿[
+  {
+    "labelKey": "customer/firstName",
+    "labelText": "First name",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/back",
+    "labelText": "Back",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/next",
+    "labelText": "Next",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/submit",
+    "labelText": "Submit",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/lastName",
+    "labelText": "Last name",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/street",
+    "labelText": "Street",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/houseNumber",
+    "labelText": "House number",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/city",
+    "labelText": "City",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/telephone",
+    "labelText": "Telephone",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/email",
+    "labelText": "Email",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "customer/comments",
+    "labelText": "Comments",
+    "infoText": "Anything which you wish to share with us",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "select-products/book-hero",
+    "labelText": "Book your favorite Super Heroes!",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "select-products/choose-discount",
+    "labelText": "Choose your discount!",
+    "infoText": "Choose any level you like, this is just for demo purposes, there are no requirements. This is also a demo for the tooltip.",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-shopping-bag",
+    "labelText": "Your shopping bag",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/personal-details",
+    "labelText": "Personal details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/check-and-submit",
+    "labelText": "Check and submit your booking",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-booking-details",
+    "labelText": "Your booking details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/your-personal-details",
+    "labelText": "Your personal details",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "general/thank-you",
+    "labelText": "Thank you for booking!",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  },
+  {
+    "labelKey": "",
+    "labelText": "",
+    "infoText": "",
+    "optionValue": "",
+    "cssClass": "",
+    "linkUrl": ""
+  }
+]

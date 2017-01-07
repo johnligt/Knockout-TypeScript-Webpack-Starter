@@ -1,0 +1,35 @@
+﻿{
+  "products": 
+  [
+    {
+      "productId":  1,
+      "productName": "Widget 1",
+      "productPrice": 10.00,
+      "discountPrice": 5.00
+    },
+    {
+      "productId": 2,
+      "productName": "Widget 2",
+      "productPrice": 20.00,
+      "discountPrice": 15.00
+    },
+    {
+      "productId": 3,
+      "productName": "Widget 3",
+      "productPrice": 30.00,
+      "discountPrice": 25.00
+    },
+    {
+      "productId": 4,
+      "productName": "Widget 4",
+      "productPrice": 40.00,
+      "discountPrice": 35.00
+    },
+    {
+      "productId": 5,
+      "productName": "Widget 5",
+      "productPrice": 50.00,
+      "discountPrice": 45.00
+    }
+  ]
+}

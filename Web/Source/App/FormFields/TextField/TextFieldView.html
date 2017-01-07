@@ -1,0 +1,9 @@
+﻿<div>
+    <label class="textfield-label" data-bind="text: label.labelText, attr: { for: name }"></label>
+
+    <input type="text" class="" data-bind="textInput: field, css: cssClass, attr: { name: name, id: name, placeholder: placeholder, readonly: readonly }, event: { blur: onblur }, voorletters: field, parseVoorletters: voorletters, parentValidationElement: { cssClass: 'val-error', field: field }">
+    
+    <!-- ko if: label.infoText !== null && label.infoText !== "" -->
+        <i class="icon icon_info-circle t-tip t-tip__standard t-tip__gamma" data-bind="tooltip: {title: label.infoText }"></i>
+    <!--/ko-->
+</div>

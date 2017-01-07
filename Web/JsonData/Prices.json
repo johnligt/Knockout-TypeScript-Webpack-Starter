@@ -1,0 +1,33 @@
+﻿[
+  {
+    "productId": 1,
+    "productDefaultPrice": 100.00,
+    "productDiscountPrice": 75.00,
+    "productSuperDiscountPrice": 50.00
+  },
+  {
+    "productId": 2,
+    "productDefaultPrice": 100.00,
+    "productDiscountPrice": 75.00,
+    "productSuperDiscountPrice": 50.00
+  },
+  {
+    "productId": 3,
+    "productDefaultPrice": 80.00,
+    "productDiscountPrice": 60.00,
+    "productSuperDiscountPrice": 40.00
+  },
+  {
+    "productId": 4,
+    "productDefaultPrice": 50.00,
+    "productDiscountPrice": 35.00,
+    "productSuperDiscountPrice": 20.00
+  },
+  {
+    "productId": 5,
+    "productDefaultPrice": 50.00,
+    "productDiscountPrice": 35.00,
+    "productSuperDiscountPrice": 20.00
+  }
+]
+
