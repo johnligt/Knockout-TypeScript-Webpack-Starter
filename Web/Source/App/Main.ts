@@ -1,6 +1,4 @@
-﻿import * as ko from "knockout";
-//require("expose?window.jQuery!jquery");
-require("expose?ko!knockout");
+﻿require("expose?ko!knockout");
 import es6promise = require("es6-promise");
 import { CustomBindingHandlers } from "App/CustomBindingHandlers";
 import { ComponentRegistration } from "App/ComponentRegistration";
@@ -10,7 +8,7 @@ import { PriceService } from "App/Services/PriceService";
 import { LabelService } from "App/Services/LabelService";
 import { BookingDataService } from "App/Services/BookingDataService";
 import { PhonenumberValidationRule } from "App/Validation/PhonenumberValidationRule";
-import { NoHtmlValidationRule } from 'App/Validation/NoHtmlValidationRule';
+import { NoHtmlValidationRule } from "App/Validation/NoHtmlValidationRule";
 
 export class Main {
 
