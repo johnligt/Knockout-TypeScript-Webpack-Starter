@@ -121,8 +121,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Build\app.bundle.js.map" />
-    <Content Include="Build\vendor.js.map" />
     <Content Include="Source\App\Components\ProductList\ProductListView.html" />
     <Content Include="Source\App\Components\ShoppingBag\ShoppingBagView.html" />
     <Content Include="Source\App\Components\Discount\DiscountView.html" />

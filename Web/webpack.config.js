@@ -11,8 +11,7 @@ module.exports = {
         alias: {
             "jquery": "lib/jquery-2.2.4",            
             "modernizr": "lib/modernizr-custom",
-            "knockout": "lib/knockout-3.4.0.debug",
-            "knockout.mapping": "lib/knockout.mapping-latest",
+            "knockout": "lib/knockout-3.4.0.debug",           
             "knockout.validation": "lib/knockout.validation",                   
             "es6-promise": "lib/es6-promise",
             "bootstrap": "lib/bootstrap",
@@ -20,7 +19,8 @@ module.exports = {
         }
     },
     entry: {
-        app: "./App/Main.ts"
+        app: "./App/Main.ts",
+        vendor: ["jquery", "modernizr", "knockout", "knockout.validation", "es6-promise", "bootstrap", "moment"]
     },
     output: {
         path: path.resolve("./Build"),
@@ -46,9 +46,9 @@ module.exports = {
             jquery: "jquery",
             "windows.jQuery": "jquery",
             jQuery: "jquery"
-        })//,
-        //new webpack.optimize.CommonsChunkPlugin("vendor.js"),
-        //new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 3 })
+        }),
+        new webpack.optimize.CommonsChunkPlugin("vendor.js"),
+        new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 3 })
     ].concat(isDevBuild ? [
         // Plugins that apply in development builds only
         //new webpack.SourceMapDevToolPlugin({ moduleFilenameTemplate: '../../[resourcePath]' }) // Compiled output is at './wwwroot/dist/', but sources are relative to './'
