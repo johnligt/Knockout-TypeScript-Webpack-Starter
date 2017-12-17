@@ -16,7 +16,7 @@
     "path": "^0.12.7",
     "text-loader": "0.0.1",
     "ts-loader": "^0.9.4",
-    "typescript": "^2.0.3",
+    "typescript": "2.0.10",
     "webpack": "^1.13.2"
   },
   "author": "John Ligtenberg",
